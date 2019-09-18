@@ -1,0 +1,14 @@
+/* Globally enable grid prefixes */
+/* autoprefixer grid: on */
+
+.myheader {
+  background: #97ffc8;
+}
+
+.mymain {
+  display: flex;
+}
+
+.mymain > * {
+  flex: 1;
+}
