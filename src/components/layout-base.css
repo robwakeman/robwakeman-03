@@ -1,0 +1,77 @@
+html {
+  font-size: 1px; /*for using REM units*/
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
+}
+
+main {
+  display: block;
+}
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* styles below are from normalize.css - I'm not including them yet, but available here to be uncommented if needed */
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+/* 
+ button,
+ [type="button"],
+ [type="reset"],
+ [type="submit"] {
+   -webkit-appearance: button;
+ }
+  */
+/**
+  * Remove the inner border and padding in Firefox.
+  */
+/* 
+ button::-moz-focus-inner,
+ [type="button"]::-moz-focus-inner,
+ [type="reset"]::-moz-focus-inner,
+ [type="submit"]::-moz-focus-inner {
+   border-style: none;
+   padding: 0;
+ }
+  */
+/**
+  * Restore the focus styles unset by the previous rule.
+  */
+/*  
+ button:-moz-focusring,
+ [type="button"]:-moz-focusring,
+ [type="reset"]:-moz-focusring,
+ [type="submit"]:-moz-focusring {
+   outline: 1px dotted ButtonText;
+ }
+ */
