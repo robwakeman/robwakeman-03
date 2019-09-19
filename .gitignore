@@ -68,5 +68,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
-# Unused files
+# RW added
+README-PRIVATE.md
 unused
