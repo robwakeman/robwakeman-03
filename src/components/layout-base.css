@@ -39,6 +39,15 @@ a {
   cursor: pointer;
 }
 
+/**
+ * Typography
+ */
+
+h1 {
+  font-size: 40rem;
+  font-weight: bold;
+}
+
 /* styles below are from normalize.css - I'm not including them yet, but available here to be uncommented if needed */
 
 /**
