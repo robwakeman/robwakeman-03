@@ -26,17 +26,19 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header
-        siteTitle={data.site.siteMetadata.title}
-        siteDescription={data.site.siteMetadata.description}
-      />
-      <div>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className="wrapper">
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          siteDescription={data.site.siteMetadata.description}
+        />
+        <div>
+          <main>{children}</main>
+          <footer>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </footer>
+        </div>
       </div>
     </>
   )
