@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       />
       <div className="wrapper">
         <div className="wrapper-inner">
-          <main>{children}</main>
+          <main className="main">{children}</main>
           <footer>
             © {data.site.siteMetadata.title} {new Date().getFullYear()}
           </footer>
