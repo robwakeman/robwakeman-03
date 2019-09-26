@@ -10,6 +10,12 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis error
+      repellendus, consectetur doloremque debitis quod magnam itaque, vitae
+      nihil inventore ea id, dolorum voluptate fugiat atque quis. Obcaecati,
+      asperiores. Pariatur.
+    </p>
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />

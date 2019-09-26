@@ -26,17 +26,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        siteDescription={data.site.siteMetadata.description}
+      />
       <div className="wrapper">
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          siteDescription={data.site.siteMetadata.description}
-        />
-        <div>
+        <div className="wrapper-inner">
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            © {data.site.siteMetadata.title} {new Date().getFullYear()}
           </footer>
         </div>
       </div>

@@ -3,3 +3,187 @@
 ## Unused files
 
 Added unused style files in ./unused
+
+## Autoprefixer / Grid prefixes for IE11
+
+When writing CSS Grid that you expect to be prefixed correctly for IE11, use Grid Templates to define your rows and columns
+https://medium.com/@zaid.aldabbagh/configure-autoprefixer-correctly-to-output-ms-grid-prefixes-97743d0a8eb8
+
+Autoprefixer is used by default in Gatsby.
+
+By default, Gatsby emulates the following config:
+package.json
+
+```javascript
+{
+ "browserslist": [
+   ">0.25%",
+   "not dead"
+ ]
+}
+```
+
+i.e. any browsers that have over 0.25% of the market share and are not dead
+
+https://www.gatsbyjs.org/docs/browser-support/
+
+It uses this config for both the Babel transpilation and Autoprefixer.
+
+Here's what the browser list looks like (18/09/19)
+
+https://browserl.ist/?q=%3E+0.25%25%2C+not+dead
+
+At 25/09/19, it includes IE11 (1.91%) and states: Global coverage: 91.43%
+
+Autoprefixer seems to be working, because I've put in some test CSS:
+
+```css
+transition: all 1s linear;
+```
+
+which correctly get prefixes added:
+
+```css
+-webkit-transition: all 1s linear;
+transition: all 1s linear;
+```
+
+But for IE11 Grid prefixes, Autoprefixer needs to be specifically instructed. There's no easy way of accessing or overriding the Webpack config in Gatsby
+
+_We can modify webpack config via plugins (and gatsby APIs in general), so it's technically possible (but certainly will be messy). There is defenitely demand to make it configurable (based on linked issue and this one). I'll try to come up with code snippet to do this_
+
+https://github.com/gatsbyjs/gatsby/issues/15509
+
+So the solution I'm using is control comments in CSS.
+
+_Note that the grid: "no-autoplace" setting and the `/* autoprefixer grid: no-autoplace */` control comment share identical functionality to the grid: true setting and the `/* autoprefixer grid: on */` control comment. There is no need to refactor old code to use no-autoplace in place of the old true and on statements._
+https://github.com/postcss/autoprefixer/blob/master/README.md
+
+In testing, I was previously using `/* autoprefixer grid: on */`, but have since changed it to `/* autoprefixer grid: autoplace */`. This seems to be the newer spec, but it doesn't make any difference to the behaviour - both work.
+
+I added the following control comment to main.scss
+
+```css
+/* autoprefixer grid: autoplace */
+```
+
+That leads to this control comment being placed at the top of the concatenated stylesheet, so there's no need to add it to the partials
+
+- src/styles/\_layout-minireset.scss
+- src/styles/\_layout-base.scss
+
+However, Grid prefixes are not being generated.
+
+Even if I add the browserslist key to package.json as follows:
+
+```javascript
+"browserslist": [
+    "> 0.1%",
+    "not dead"
+  ],
+```
+
+which obviously then includes a much wider range of browsers and versions, Grid prefixes are STILL not generated.
+
+This CSS:
+
+```css
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+```
+
+should be converted to this CSS:
+
+```css
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.wrapper > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+```
+
+according to the online Autoprefixer tool
+https://autoprefixer.github.io/, but it's not.
+
+Issue seems replicated here
+https://github.com/gatsbyjs/gatsby/issues/15509
+
+_We have autoprefixer in gatsby core (which gatsby-plugin-sass uses as we pass some prebundled rules to plugins) -_
+
+_gatsby/packages/gatsby/src/utils/webpack-utils.js_
+
+```javascript
+ autoprefixer({ overrideBrowserslist, flexbox: `no-2009` }),
+```
+
+From that, it looks like it's overriding what I specify in the browserslist key in package.json, but it's not, because as noted above, it IS adding prefixes for some CSS rules.
+
+I eventually discovered that this seems to be a bug that other people are experiencing:
+
+Posted 05/09/19:
+
+_I am able to use `/* autoprefixer grid: on */` and get the prefixes using Gatsby's development mode, but then they disappear on build._
+https://github.com/gatsbyjs/gatsby/issues/15509
+
+I am experiencing the same behaviour, i.e. I can see the -ms prefixes in Chrome Dev Tools in the DOM, but on build, they don't appear in the concatenated and minified stylesheet.
+
+My plan:
+
+Until this issue is fixed:
+
+- I will continue to use CSS Grid
+- I will use the default autoprefixer settings in Gatsby i.e. NOT add a browserslist key in package.json and rely on the default ">0.25%", "not dead"
+- Then, just prior to deployment, I will manually run the grid rules through Autoprefixer CSS Online (https://autoprefixer.github.io)
+- And then do:
+
+`npm run build`
+
+## Grid rules not supported in IE11
+
+This is from warnings when running gatsby develop.
+
+My CSS was:
+
+```css
+.wrapper {
+  justify-items: center;
+}
+```
+
+Warning:
+IE does not support justify-items on grid containers. Try using justify-self on child elements instead:
+
+```css
+.wrapper > * {
+  justify-self: center;
+}
+```
+
+That removed the warning.
+
+Later my CSS was
+
+```css
+.wrapper {
+place-items: center;
+```
+
+I removed the IE warning by following the suggestion to use `place-self` on child items:
+
+```css
+.wrapper > * {
+  place-self: center;
+}
+```

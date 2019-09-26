@@ -34,9 +34,29 @@ a {
   cursor: pointer;
 }
 
+.main {
+  background: linen;
+}
+
+footer {
+  background: crimson;
+}
+
 .wrapper {
+  background: yellowgreen;
   display: grid;
-  justify-items: center;
+  // grid: auto / 16rem 1fr 16rem;
+  grid-template-columns: 32rem 1fr 32rem;
+  grid-template-areas: ". wrapperinner .";
+
+  & > * {
+    place-self: center;
+  }
+}
+
+.wrapper-inner {
+  grid-area: wrapperinner;
+  max-width: 800px;
 }
 
 /**
