@@ -34,28 +34,38 @@ a {
   cursor: pointer;
 }
 
-.main {
-  background: linen;
-}
-
-footer {
-  background: gold;
-}
-
 .wrapper {
   background: yellowgreen;
   display: grid;
   grid-template-columns: 32rem 1fr 32rem;
+  grid-template-rows: auto;
   grid-template-areas: ". wrapperinner .";
-
-  & > * {
-    place-self: center;
-  }
 }
 
 .wrapper-inner {
   grid-area: wrapperinner;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.header {
+  margin-top: 16rem;
+}
+
+.main {
+  background: linen;
+  place-self: start center;
+  max-width: 700px;
+  margin-top: 64rem;
+}
+
+.footer {
+  background: gold;
+  text-align: center;
+  margin: top auto;
+  padding: 32rem 0;
 }
 
 /**

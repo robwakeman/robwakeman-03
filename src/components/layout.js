@@ -34,8 +34,10 @@ const Layout = ({ children }) => {
           />
 
           <main className="main">{children}</main>
-          <footer>
-            © {data.site.siteMetadata.title} {new Date().getFullYear()}
+          <footer className="footer">
+            <div>
+              © {data.site.siteMetadata.title} {new Date().getFullYear()}
+            </div>
           </footer>
         </div>
       </div>
