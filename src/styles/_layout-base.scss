@@ -45,7 +45,6 @@ footer {
 .wrapper {
   background: yellowgreen;
   display: grid;
-  // grid: auto / 16rem 1fr 16rem;
   grid-template-columns: 32rem 1fr 32rem;
   grid-template-areas: ". wrapperinner .";
 
