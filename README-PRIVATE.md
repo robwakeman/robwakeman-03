@@ -187,3 +187,24 @@ I removed the IE warning by following the suggestion to use `place-self` on chil
   place-self: center;
 }
 ```
+
+I have used a max-width on .main
+
+```css
+.main {
+  background: linen;
+  place-self: start center;
+  max-width: 700px;
+  margin-top: 64rem;
+}
+```
+
+I could have alternatively used an inner grid on .wrapper-inner with 3 cols, sth like (I think!):
+
+```css
+.wrapper-inner {
+  display: grid;
+  grid-template-columns: minmax(32rem, 1fr) minmax(400px 800px) minmax(32rem, 1fr);
+  grid-template-rows: auto;
+}
+```

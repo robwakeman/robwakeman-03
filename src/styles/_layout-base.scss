@@ -54,6 +54,26 @@ a {
   margin-top: 16rem;
 }
 
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  background: skyblue;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  background: yellow;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 64rem;
+}
+
 .main {
   background: linen;
   place-self: start center;
@@ -84,4 +104,5 @@ p {
 
 .title {
   font-size: 24rem;
+  margin-bottom: 0;
 }

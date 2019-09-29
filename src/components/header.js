@@ -6,7 +6,7 @@ import Nav from "./nav"
 
 const Header = ({ siteTitle, siteDescription }) => (
   <header className="header">
-    <div>
+    <div className="header-inner">
       <h1 className="title">
         <Link to="/">
           {siteTitle} | {siteDescription}
