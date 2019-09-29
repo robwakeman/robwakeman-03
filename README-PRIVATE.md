@@ -208,3 +208,51 @@ I could have alternatively used an inner grid on .wrapper-inner with 3 cols, sth
   grid-template-rows: auto;
 }
 ```
+
+## Passing props and children into functional component
+
+This works - Not totally sure that it's best practice:
+
+```javascript
+// layout.js
+const Layout = ({ children, fruit }) => {
+  // etc
+```
+
+```javascript
+// index.js
+const IndexPage = () => (
+  <Layout fruit="apple">
+  etc
+```
+
+i.e. the fruit property is destructured from props alongside children
+
+To explain the passing of children (but not totally sure of my wording):
+children is destructured from props.
+
+So, instead of just passing props and accessing the children property in the rendered JSX:
+
+```javascript
+const Test = props => (
+  <>
+    <p>I am a test component</p>
+    <div className="mychild">{props.children}</div>
+  </>
+)
+```
+
+we destructure props in the function argument and use it as follows:
+
+```javascript
+const Test = ({ children }) => (
+  <>
+    <p>I am a test component</p>
+    <div className="mychild">{children}</div>
+  </>
+)
+```
+
+Good video explaining children
+How to use React Children Props in your React websites and React webapps
+https://www.youtube.com/watch?v=Mjrb8eZqBkA
