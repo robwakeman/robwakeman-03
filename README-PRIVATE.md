@@ -4,6 +4,35 @@
 
 Added unused style files in ./unused
 
+## REM for Responsive Design
+
+I have used `font-size: 1px` to make REM sizes easier to calculate.
+https://coderwall.com/p/lh9t8g/update-your-font-size-to-rem-units
+
+```css
+html {
+  font-size: 1px;
+}
+```
+
+When you want to change all font size according to breakpoints in your responsive design it is a lot more easy. See example:
+
+```css
+@media (min-width: 320px) {
+  html {
+    font-size: 1.4px;
+  }
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: 1.2px;
+  }
+}
+```
+
+Now in smaller screens we re-size all fonts by 40% bigger, and in medium screens we re-size it by 20% bigger.
+
 ## Autoprefixer / Grid prefixes for IE11
 
 When writing CSS Grid that you expect to be prefixed correctly for IE11, use Grid Templates to define your rows and columns
@@ -208,6 +237,9 @@ I could have alternatively used an inner grid on .wrapper-inner with 3 cols, sth
   grid-template-rows: auto;
 }
 ```
+
+_The grid-gap property, as well as its long-hand forms grid-column-gap and grid-row-gap, don't exist in the older spec, so they aren't supported by IE11._
+https://stackoverflow.com/questions/45786788/css-grid-layout-not-working-in-ie11-even-with-prefixes
 
 ## Passing props and children into functional component
 
