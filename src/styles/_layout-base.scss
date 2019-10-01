@@ -1,5 +1,6 @@
+// for using REM units
 html {
-  font-size: 1px; /*for using REM units*/
+  font-size: 1px;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -48,10 +49,6 @@ a {
   margin: 0 auto;
   max-width: 750px;
   padding: 32rem;
-  // display: grid;
-  // grid-template-columns: 32rem auto 32rem;
-  // grid-template-rows: minmax(100px, 1fr);
-  // grid-template-areas: ". main .";
 }
 
 .header {
