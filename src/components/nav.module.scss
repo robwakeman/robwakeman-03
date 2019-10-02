@@ -1,14 +1,14 @@
-.nav-menu {
+.nav {
   background: skyblue;
   display: flex;
   align-items: center;
-}
 
-.nav-list {
-  background: yellow;
-  display: flex;
-}
+  &__list {
+    background: yellow;
+    display: flex;
+  }
 
-.nav-item {
-  margin-left: 64rem;
+  &__item {
+    margin-left: 64rem;
+  }
 }
