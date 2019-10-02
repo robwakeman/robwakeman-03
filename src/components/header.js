@@ -7,8 +7,8 @@ import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle, siteDescription }) => (
   <header className={headerStyles.header}>
-    <div className={headerStyles.headerInner}>
-      <h1 className={headerStyles.title}>
+    <div className={headerStyles.header__inner}>
+      <h1 className={headerStyles.header__title}>
         <Link to="/">
           {siteTitle} | {siteDescription}
         </Link>

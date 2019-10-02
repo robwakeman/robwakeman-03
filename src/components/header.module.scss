@@ -1,10 +1,15 @@
 .header {
   background: pink;
-}
 
-.header-inner {
-  margin: 16rem 32rem 0;
-  display: flex;
-  justify-content: space-between;
-  background: #eee;
+  &__inner {
+    margin: 16rem 32rem 0;
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+  }
+
+  &__title {
+    font-size: 24rem;
+    margin-bottom: 0;
+  }
 }
