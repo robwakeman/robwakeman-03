@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import Nav from "./nav"
-import layoutStyles from "./layout.module.scss"
+import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle, siteDescription }) => (
-  <header className={layoutStyles.header}>
-    <div className={layoutStyles.headerInner}>
-      <h1 className={layoutStyles.title}>
+  <header className={headerStyles.header}>
+    <div className={headerStyles.headerInner}>
+      <h1 className={headerStyles.title}>
         <Link to="/">
           {siteTitle} | {siteDescription}
         </Link>

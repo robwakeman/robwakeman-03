@@ -1,20 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
-import layoutStyles from "./layout.module.scss"
+import navStyles from "./nav.module.scss"
 
 const Nav = () => (
-  <nav className={layoutStyles.navMenu}>
-    <ul className={layoutStyles.navList}>
-      <li className={layoutStyles.navItem}>
+  <nav className={navStyles.navMenu}>
+    <ul className={navStyles.navList}>
+      <li className={navStyles.navItem}>
         <Link to="/">Home</Link>
       </li>
-      <li className={layoutStyles.navItem}>
+      <li className={navStyles.navItem}>
         <Link to="/portfolio">Portfolio</Link>
       </li>
-      <li className={layoutStyles.navItem}>
+      <li className={navStyles.navItem}>
         <Link to="/about">About</Link>
       </li>
-      <li className={layoutStyles.navItem}>
+      <li className={navStyles.navItem}>
         <Link to="/contact">Contact</Link>
       </li>
     </ul>
