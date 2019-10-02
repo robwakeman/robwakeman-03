@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
         />
 
         <div className={layoutStyles.content}>
-          <main className="main">{children}</main>
+          <main className={layoutStyles.main}>{children}</main>
         </div>
 
         <footer className={layoutStyles.footer}>
