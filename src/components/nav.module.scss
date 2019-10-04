@@ -70,7 +70,7 @@
   content: "";
   position: absolute;
   z-index: 1;
-  top: -10px;
+  top: -10px; // this moves both before and after lines up to top
   width: 100%;
   height: 2px;
   background: inherit;
@@ -78,7 +78,8 @@
 
 /* Moves Line Down */
 .menu-wrap .hamburger > div::after {
-  top: 10px;
+  // > selector targets direct children
+  top: 10px; // this moves one line to bottom
 }
 
 /* Toggler Animation */
@@ -87,6 +88,8 @@
 }
 
 /* Turns Lines Into X */
+// + selector:
+// div + p	Selects all <p> elements that are placed immediately after <div> elements
 .menu-wrap .toggler:checked + .hamburger > div:before,
 .menu-wrap .toggler:checked + .hamburger > div:after {
   top: 0;
@@ -99,6 +102,15 @@
 }
 
 /* Show Menu */
+// ~ selector BEGIN
+// The general sibling combinator (~) separates two selectors and matches the second element only if it follows the first element (though not necessarily immediately), and both are children of the same parent element.
+
+/* Paragraphs that are siblings of and
+   subsequent to any image */
+//  img ~ p {
+//   color: red;
+// }
+// ~ selector END
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
 }
