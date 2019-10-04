@@ -44,8 +44,8 @@
   z-index: 1;
   width: 60px;
   height: 60px;
-  padding: 1rem;
-  background: var(--primary-color);
+  padding: 16rem; // 1rem in traversy, convert to my px/rem ratio
+  background: orchid;
   display: flex;
   align-items: center;
   justify-content: center;
