@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
 // const Nav = () => (
@@ -24,12 +24,12 @@ import navStyles from "./nav.module.scss"
 // from Brad Traversy https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100
 
 const Nav = () => (
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler" />
-    <div class="hamburger">
+  <div className={navStyles.menuWrap}>
+    <input type="checkbox" className={navStyles.toggler} />
+    <div className={navStyles.hamburger}>
       <div></div>
     </div>
-    <div class="menu">
+    <div className={navStyles.menu}>
       <div>
         <div>
           <ul>
