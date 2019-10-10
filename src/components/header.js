@@ -20,7 +20,7 @@ import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle, siteDescription }) => (
   <header className={headerStyles.header}>
-    <Link to="/">
+    <Link to="/" className={headerStyles.logo}>
       {siteTitle} | {siteDescription}
     </Link>
     <Nav />
