@@ -1,22 +1,22 @@
 // old code - desktop menu
 
-// .nav {
-//   background: skyblue;
-//   display: flex;
-//   align-items: center;
+.nav {
+  background: skyblue;
+  display: flex;
+  align-items: center;
 
-//   &__list {
-//     background: yellow;
-//     display: flex;
-//   }
+  &__list {
+    background: yellow;
+    display: flex;
+  }
 
-//   &__item {
-//     margin-left: 64rem;
-//   }
-// }
+  &__item {
+    margin-left: 64rem;
+  }
+}
 
 /* MENU STYLES */
-// https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100
+// from FollowAndrew https://www.youtube.com/watch?v=sjrp1FEHnyA
 
 .menu-wrap {
   // position: fixed;

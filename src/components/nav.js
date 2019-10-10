@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
 // const Nav = () => (
@@ -21,35 +21,27 @@ import navStyles from "./nav.module.scss"
 //   </nav>
 // )
 
-// from Brad Traversy https://codepen.io/bradtraversy/pen/vMGBjQ?editors=1100
-
 const Nav = () => (
-  <div className={navStyles.menuWrap}>
-    <input type="checkbox" className={navStyles.toggler} />
-    <div className={navStyles.hamburger}>
-      <div></div>
-    </div>
-    <div className={navStyles.menu}>
-      <div>
-        <div>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+  <>
+    <input className="menu-btn" type="checkbox" id="menu-btn" />
+    <label className="menu-icon" for="menu-btn">
+      <span className="nav-icon"></span>
+    </label>
+    <ul className="menu">
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="/portfolio">Portfolio</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
+      <li>
+        <Link to="/contact">Contact</Link>
+      </li>
+    </ul>
+  </>
 )
 
 export default Nav

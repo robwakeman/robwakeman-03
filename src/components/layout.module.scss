@@ -11,6 +11,7 @@ body {
   line-height: 1.6;
   color: #222;
   background: teal;
+  padding-top: 90px; // to prevent content from being hidden under fixed nav
 }
 
 main {
