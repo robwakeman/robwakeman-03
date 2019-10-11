@@ -2,6 +2,8 @@
 // Responsive Pure CSS Menu Tutorial (No Javascript)
 // https://www.youtube.com/watch?v=sjrp1FEHnyA
 
+@import "variables";
+
 /* menu */
 
 .menu {
@@ -18,7 +20,7 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  // background: orange;
+  // background: $test-colour-orange;
   margin-top: 5px;
 }
 
@@ -58,7 +60,6 @@
   position: absolute;
   top: -9999px;
   left: -9999px;
-  background: brown;
 }
 
 /* RW added */

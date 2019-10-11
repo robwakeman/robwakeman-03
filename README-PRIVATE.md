@@ -38,6 +38,31 @@ When you want to change all font size according to breakpoints in your responsiv
 
 Now in smaller screens we re-size all fonts by 40% bigger, and in medium screens we re-size it by 20% bigger.
 
+## Sass - importing partials e.g. \_variables.scss
+
+In gatsby-config.js
+
+```javascript
+resolve: `gatsby-plugin-sass`,
+      options: {
+        includePaths: [`${__dirname}/src/styles`],
+      },
+```
+
+Then, using CSS modules, just import the partial from the CSS module e.g.
+src/components/layout.module.scss
+and use it inside layout.module.scss e.g.
+
+```css
+@import "variables";
+
+body {
+  background: $base-color;
+}
+```
+
+https://spectrum.chat/gatsby-js/general/is-it-possible-to-use-sass-partials-with-css-sass-modules~de6b24e6-f8be-497a-a47d-fd4d42451c69
+
 ## Autoprefixer / Grid prefixes for IE11
 
 When writing CSS Grid that you expect to be prefixed correctly for IE11, use Grid Templates to define your rows and columns
