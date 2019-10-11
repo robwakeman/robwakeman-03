@@ -11,8 +11,10 @@ Added unused style files in ./unused
 
 ## REM for Responsive Design
 
-I have used `font-size: 1px` to make REM sizes easier to calculate.
+Initially, I was using `font-size: 1px` to make REM sizes easier to calculate.
 https://coderwall.com/p/lh9t8g/update-your-font-size-to-rem-units
+
+I have now decided against this - just not comfortable with it - seems weird.
 
 ```css
 html {

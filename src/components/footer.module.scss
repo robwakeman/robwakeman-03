@@ -1,5 +1,7 @@
+@import "variables";
+
 .footer {
-  background: gold;
+  background: $test-colour-gold;
   text-align: center;
-  padding: 32rem 0;
+  padding: 2rem 0;
 }
