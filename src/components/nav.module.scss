@@ -1,13 +1,14 @@
+// RW modified from:
+// Responsive Pure CSS Menu Tutorial (No Javascript)
+// https://www.youtube.com/watch?v=sjrp1FEHnyA
+
 /* menu */
 
 .menu {
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
-}
-
-.menu {
   text-align: center;
+  transition: max-height 0.2s ease-out;
 }
 
 // label
