@@ -368,3 +368,19 @@ const Test = ({ children }) => (
 Good video explaining children
 How to use React Children Props in your React websites and React webapps
 https://www.youtube.com/watch?v=Mjrb8eZqBkA
+
+## Typography variables in \_variables.scss
+
+I was initially using CSS calc
+
+`$textMD: calc($textBaseSize \* \$textScaleRatio);`
+
+But, if using calc, we'd need to interpolate with `#` e.g.
+
+`left: calc(50% - #{$width / 2});`
+
+Instead, I'm just using straightforward arithmetic operators alone e.g. multiplication with `*` which is possible in Sass:
+
+```css
+$textMD: $textBaseSize * $textScaleRatio;
+```
