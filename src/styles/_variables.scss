@@ -1,7 +1,4 @@
-$testColourOrange: orange;
-$testColourLinen: linen;
-$testColourPurple: purple;
-$testColourGold: gold;
+// colours
 
 $colourPrimary: hotpink;
 $colourPrimaryLight: lightpink;
@@ -10,3 +7,38 @@ $colourPrimaryDark: deeppink;
 $colourSecondary: seagreen;
 $colourSecondaryLight: lightseagreen;
 $colourSecondaryDark: darkseagreen;
+
+$testColourOrange: orange;
+$testColourLinen: linen;
+$testColourPurple: purple;
+$testColourGold: gold;
+
+// typography
+
+$fontPrimary: "Source Sans Pro", sans-serif;
+$textColour: #222;
+$textBaseSize: 18px;
+$textScaleRatio: 1.2;
+
+// if using calc, we'd need to interpolate with # e.g. left: calc(50% - #{$width / 2});
+
+// $textXS: calc($textBaseSize / ($textScaleRatio * $textScaleRatio));
+// $textSM: calc($textBaseSize / $textScaleRatio);
+// $textMD: calc($textBaseSize * $textScaleRatio);
+// $textLG: calc($textBaseSize * $textScaleRatio * $textScaleRatio);
+// $textXL: calc(
+//   $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio
+// );
+// $textXXL: calc(
+//   $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio *
+//     $textScaleRatio
+// );
+
+// but we're in sass, so can use mathematical operators directly
+$textXS: $textBaseSize / ($textScaleRatio * $textScaleRatio);
+$textSM: $textBaseSize / $textScaleRatio;
+$textMD: $textBaseSize * $textScaleRatio;
+$textLG: $textBaseSize * $textScaleRatio * $textScaleRatio;
+$textXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio;
+$textXXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio *
+  $textScaleRatio;

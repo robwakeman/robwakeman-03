@@ -1,11 +1,11 @@
 @import "variables";
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+  font-family: $fontPrimary;
+  font-size: $textBaseSize;
   font-weight: 400;
   line-height: 1.8;
-  color: #222;
+  color: $textColour;
   // background: $testColourOrange;
 
   padding-top: 90px; // to prevent content from being hidden under fixed nav
@@ -25,6 +25,11 @@ main {
 small {
   font-size: 80%;
 }
+
+// :global(.test-small) {
+//   font-size: $textSM;
+//   color: hotpink;
+// }
 
 button,
 input,
@@ -61,7 +66,7 @@ a {
  */
 
 h1 {
-  font-size: 3rem;
+  font-size: $textLG;
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.8em;

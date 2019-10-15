@@ -35,13 +35,10 @@ const Layout = ({ children }) => {
         />
 
         <div className={layoutStyles.content}>
-          <main className={layoutStyles.main}>{children}</main>
+          <main>{children}</main>
         </div>
 
-        <Footer
-          className={layoutStyles.footer}
-          siteTitle={data.site.siteMetadata.title}
-        />
+        <Footer siteTitle={data.site.siteMetadata.title} />
       </div>
     </>
   )

@@ -40,6 +40,54 @@ When you want to change all font size according to breakpoints in your responsiv
 
 Now in smaller screens we re-size all fonts by 40% bigger, and in medium screens we re-size it by 20% bigger.
 
+## CSS Modules in pages (e.g. index.js) and child components
+
+By using `:global`, it allows styles in layout.module.scss to be used in any component:
+
+```css
+/* Define the global style */
+:global(.text) {
+  font-size: 16px;
+}
+```
+
+I did a test with:
+
+```css
+:global(.test-small) {
+  font-size: $textSM;
+  color: hotpink;
+}
+```
+
+and used it in index.js as follows in the JSX:
+
+```html
+<span className="test-small">dolor sit</span>
+```
+
+and it works. This is what is produced in the DOM:
+
+```html
+<span class="test-small">dolor sit</span>
+```
+
+i.e. the class name won't be modulified such as `layout-module--content--3nIku`
+
+Note: we don't need to camelCase the class name as it's not in the format:
+
+`className={layoutStyles.container}`
+
+How to apply global styles with CSS modules in a react app?
+https://stackoverflow.com/questions/39805537/how-to-apply-global-styles-with-css-modules-in-a-react-app
+
+Also:
+https://github.com/webpack-contrib/css-loader#scope
+https://v1.pro.ant.design/docs/style
+https://github.com/css-modules/css-modules
+
+Also, CSS Modules only convert className and id. Others such as property selectors and tag selectors are not processed. It is recommended to take className as the first choice.
+
 ## Sass - importing partials e.g. \_variables.scss
 
 In gatsby-config.js
