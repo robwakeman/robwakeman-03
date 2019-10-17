@@ -375,7 +375,7 @@ I was initially using CSS calc
 
 `$textMD: calc($textBaseSize \* \$textScaleRatio);`
 
-But, if using calc, we'd need to interpolate with `#` e.g.
+But, if using calc, we'd need to interpolate with `#{}` e.g.
 
 `left: calc(50% - #{$width / 2});`
 
