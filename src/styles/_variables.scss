@@ -1,16 +1,20 @@
 // partials are now included via gatsby-config.js. main.scss is no longer used.
 
 // colours
-$colourPrimary: #ffe125;
-$colourPrimaryLight: #ffe858;
-$colourPrimaryDark: #f1d000;
+// https://coolors.co/41d3bd-fffff2-791e94-de6449-407899
 
-$colourSecondary: #6d5f00;
-$colourSecondaryLight: #bba300;
-$colourSecondaryDark: #1f1b00;
-// $colourSecondary: #4c4637;
-// $colourSecondaryLight: #6a614c;
-// $colourSecondaryDark: #2e2b22;
+$colourPrimary: #41d3bd;
+$colourPrimaryLight: #63dbc9;
+$colourPrimaryDark: #36ad9b;
+$colourPrimaryFullTint: #edfbf9;
+$colourPrimaryFullTint: #fffff2;
+$colourPrimaryFullShade: #061412;
+
+$colourSecondary: #de6449;
+$colourSecondaryLight: #e4806a;
+$colourSecondaryDark: #b6523c;
+$colourSecondaryFullTint: #fcf0ee;
+$colourSecondaryFullShade: #150a07;
 
 $testColourOrange: orange;
 $testColourLinen: linen;

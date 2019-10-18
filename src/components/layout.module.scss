@@ -80,6 +80,7 @@ button {
   margin: 1rem 0;
   padding: 1rem 1.75rem;
   background-color: $colourPrimary;
+  color: $colourPrimaryFullTint;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -95,7 +96,7 @@ button {
   // transition: background 0.1s ease-out;
 
   &:hover {
-    // color: #fff;
+    color: $colourPrimaryFullTint;
     background-color: $colourPrimary;
   }
 }
