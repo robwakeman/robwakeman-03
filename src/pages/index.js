@@ -14,12 +14,13 @@ const IndexPage = () => (
       Working with designers and clients, I produce websites that work for users
       and meet business goals.
     </p>
+    <button>Get in touch</button>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
-      rem itaque corrupti quia molestiae cumque. Facilis voluptate at
-      consequuntur officiis laudantium earum ipsum, fugiat, suscipit dolorum
-      nostrum quisquam accusamus, ipsam culpa fugit veritatis. Odio, soluta
-      nihil exercitationem.
+      rem itaque corrupti quia molestiae cumque. Facilis voluptate at.{" "}
+      <a href="#">Here is a link</a> laudantium earum ipsum, fugiat, suscipit
+      dolorum nostrum quisquam accusamus, ipsam culpa fugit veritatis. Odio,
+      soluta nihil exercitationem.
     </p>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia at

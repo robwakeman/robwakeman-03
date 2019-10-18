@@ -7,7 +7,7 @@ import headerStyles from "./header.module.scss"
 
 const Header = ({ siteTitle }) => (
   <header className={headerStyles.header}>
-    <Link to="/" className={headerStyles.logo}>
+    <Link to="/" className={headerStyles.brand}>
       {siteTitle}
     </Link>
     <Nav />
