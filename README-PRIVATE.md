@@ -42,7 +42,7 @@ Now in smaller screens we re-size all fonts by 40% bigger, and in medium screens
 
 ## CSS Modules in pages (e.g. index.js) and child components
 
-By using `:global`, it allows styles in layout.module.scss to be used in any component:
+By using `:global`, it allows styles in layout.module.scss to be used in any component, because layout.js is the parent to child components header.js, footer.js and parent to children i.e. pages such as index.js:
 
 ```css
 /* Define the global style */
@@ -112,6 +112,97 @@ body {
 ```
 
 https://spectrum.chat/gatsby-js/general/is-it-possible-to-use-sass-partials-with-css-sass-modules~de6b24e6-f8be-497a-a47d-fd4d42451c69
+
+I was doing this and it was working, but I had to `@import "variables"` in all the following files: layout.module.scss footer.module.scss, nav.module.scss
+
+That seemed a bit clunky. So, I opted for a different solution:
+
+_To auto-include some sass vars/mixins/etc. into your component \*.scss files you simply can pass data option for node-sass with @import.
+e.g: if you have common file in src/components/vars.scss, then use in your plugins declaration:_
+
+```javascript
+{
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: '@import "vars.scss";',
+    includePaths: [
+      'src/components',
+    ],
+  },
+}
+```
+
+https://github.com/gatsbyjs/gatsby/issues/6655
+
+I did that as follows, where I import both variables and minireset in the data key:
+
+```javascript
+{
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: `@import "variables";@import "minireset";`,
+    includePaths: [`${__dirname}/src/styles`],
+  },
+},
+```
+
+That allows me to remove the following from layout.js:
+
+```javascript
+import "../styles/main.scss"
+```
+
+But src/styles/main.scss was also providing another function: it was declaring the setting for Autoprefixer/Grid with:
+
+```css
+/* autoprefixer grid: autoplace */
+```
+
+So, I've decided to put that at the top of layout.module.scss instead.
+
+Another thing is that the Sass @import rule is being deprecated. Ideally, we should be using @use instead:
+
+```css
+@use 'foundation/code';
+```
+
+https://sass-lang.com/documentation/at-rules/import
+https://sass-lang.com/documentation/at-rules/use
+
+However, I tried this in gatsby-config.js with:
+
+```javascript
+{
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: `@use "variables";@use "minireset";`,
+    includePaths: [`${__dirname}/src/styles`],
+  },
+},
+```
+
+and
+
+```javascript
+{
+  resolve: `gatsby-plugin-sass`,
+  options: {
+    data: `@use 'variables';@use 'minireset';`,
+    includePaths: [`${__dirname}/src/styles`],
+  },
+},
+```
+
+and it didn't work. I think that's because I'd need to use a new version of Sass:
+
+_Sass Modules are available as of October 1st, 2019 in Dart Sass 1.23.0._
+https://css-tricks.com/introducing-sass-modules/
+
+Not sure. I will leave for now as it's working.
+
+_...this version is completely backwards compatible, and we have at least a year before anything will be deprecated from the old way of doing things... Over the next few years, Sass features of @import will be removed entirely._
+https://www.oddbird.net/2019/10/02/sass-modules/
+https://css-tricks.com/introducing-sass-modules/
 
 ## Autoprefixer / Grid prefixes for IE11
 

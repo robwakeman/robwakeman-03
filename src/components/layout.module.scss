@@ -1,4 +1,6 @@
-@import "variables";
+// this autoprefixer config was being declared in src/styles/main.scss, but has now been moved to layout.module.scss because the Sass partials are now included via gatsby-config.js. main.scss is no longer used.
+
+/* autoprefixer grid: autoplace */
 
 body {
   font-family: $fontPrimary;
@@ -6,8 +8,7 @@ body {
   font-weight: 400;
   line-height: 1.8;
   color: $textColour;
-  // background: $testColourOrange;
-
+  background: $testColourOrange;
   padding-top: 90px; // to prevent content from being hidden under fixed nav
 }
 
@@ -25,11 +26,6 @@ main {
 small {
   font-size: 80%;
 }
-
-// :global(.test-small) {
-//   font-size: $textSM;
-//   color: hotpink;
-// }
 
 button,
 input,
