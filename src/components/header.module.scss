@@ -33,7 +33,7 @@
   }
 
   & li a:hover {
-    color: $colourSecondaryFullTint;
-    background-color: $colourSecondaryLight;
+    background-color: $colourPrimary;
+    color: $colourPrimaryFullTint;
   }
 }
