@@ -476,6 +476,8 @@ Instead, I'm just using straightforward arithmetic operators alone e.g. multipli
 $textMD: $textBaseSize * $textScaleRatio;
 ```
 
+`$textMD` does NOT reset text to `$textBaseSize` (currently 18px) - it sets it to a size just above that, 18 x 1.2 i.e. 21.6px. To reset text to 18px, just use `$textBaseSize`, as opposed to one of the sizes (XS, SM, MD, LG etc).
+
 ## Colour variables in \_variables.scss
 
 // use colours from this site? see browser extension CSS Peeper > Colors
