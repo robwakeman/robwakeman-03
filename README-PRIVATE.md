@@ -417,13 +417,13 @@ https://stackoverflow.com/questions/45786788/css-grid-layout-not-working-in-ie11
 This works - Not totally sure that it's best practice:
 
 ```javascript
-// layout.js
+layout.js
 const Layout = ({ children, fruit }) => {
-  // etc
+  etc
 ```
 
 ```javascript
-// index.js
+index.js
 const IndexPage = () => (
   <Layout fruit="apple">
   etc
@@ -480,20 +480,26 @@ $textMD: $textBaseSize * $textScaleRatio;
 
 ## Colour variables in \_variables.scss
 
-// use colours from this site? see browser extension CSS Peeper > Colors
-// https://www.b4e.com/
+use colours from this site? see browser extension CSS Peeper > Colors
+https://www.b4e.com/
 
-// Friend palette on this page?
-// https://mycolor.space/?hex=%23FFE125&sub=1
+Friend palette on this page?
+https://mycolor.space/?hex=%23FFE125&sub=1
 
-// https://coolors.co/41d3bd-fffff2-791e94-de6449-407899
+https://coolors.co/41d3bd-fffff2-791e94-de6449-407899
 
-// https://www.colourlovers.com/palette/3428095/70s_Collegiate_Shag
+https://www.colourlovers.com/palette/3428095/70s_Collegiate_Shag
 
-// https://www.google.com/search?q=pinterest+colour+palette+70s&biw=1552&bih=984&tbs=qdr:y&sxsrf=ACYBGNSNIJicvC995eGxMzhoeSG06AT93g:1571431112217&tbm=isch&source=iu&ictx=1&fir=pwhSPmUUuLApkM%253A%252C-WcY39G3y-T66M%252C_&vet=1&usg=AI4_-kQOyJtLVxGl67DAA9fUlBKZTJbeEQ&sa=X&ved=2ahUKEwiK_O2J1ablAhWKFMAKHQ0gASYQ9QEwAnoECAkQDA#imgdii=n6w1eTxGyUpe2M:&imgrc=pwhSPmUUuLApkM:&vet=1
+https://www.google.com/search?q=pinterest+colour+palette+70s&biw=1552&bih=984&tbs=qdr:y&sxsrf=ACYBGNSNIJicvC995eGxMzhoeSG06AT93g:1571431112217&tbm=isch&source=iu&ictx=1&fir=pwhSPmUUuLApkM%253A%252C-WcY39G3y-T66M%252C_&vet=1&usg=AI4_-kQOyJtLVxGl67DAA9fUlBKZTJbeEQ&sa=X&ved=2ahUKEwiK_O2J1ablAhWKFMAKHQ0gASYQ9QEwAnoECAkQDA#imgdii=n6w1eTxGyUpe2M:&imgrc=pwhSPmUUuLApkM:&vet=1
 
-// https://maketintsandshades.com/#39cd9d,1e6075
+https://maketintsandshades.com/#39cd9d,1e6075
 
-// https://www.canva.com/learn/monochromatic-colors/
+https://www.canva.com/learn/monochromatic-colors/
 
-// https://www.colorhexa.com/6d5f00
+https://www.colorhexa.com/6d5f00
+
+## Responsive menu
+
+RW modified from:
+Responsive Pure CSS Menu Tutorial (No Javascript)
+https://www.youtube.com/watch?v=sjrp1FEHnyA

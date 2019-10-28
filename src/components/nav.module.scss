@@ -1,9 +1,3 @@
-// RW modified from:
-// Responsive Pure CSS Menu Tutorial (No Javascript)
-// https://www.youtube.com/watch?v=sjrp1FEHnyA
-
-// @import "variables";
-
 /* menu */
 
 .menu {
@@ -20,7 +14,6 @@
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  // background: $testColourOrange;
   margin-top: 5px;
 }
 
@@ -54,16 +47,15 @@
 }
 
 // checkbox
+
+// RW added for accessibility, instead of display: none
 .menu-btn {
-  /* display: none; */
-  /* RW added for accessibility */
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-/* RW added */
-/* this works, but might not implement */
+// add for extra accessibility - considering whether to implement or not
 // .menu-btn:focus ~ .menu-icon {
 //   outline: 3px solid green;
 // }
