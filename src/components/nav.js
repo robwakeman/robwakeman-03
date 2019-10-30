@@ -4,7 +4,7 @@ import navStyles from "./nav.module.scss"
 
 const Nav = () => (
   <>
-    <nav>
+    <nav className={navStyles.mainMenu}>
       <input className={navStyles.menuBtn} type="checkbox" id="menu-btn" />
       <label className={navStyles.menuIcon} htmlFor="menu-btn">
         <span className={navStyles.navIcon}></span>

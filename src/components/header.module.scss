@@ -6,34 +6,14 @@
   width: 100%;
   /* RW added - top 0 is needed when i add padding-top to the body */
   top: 0;
-  // display: flex;
-  // align-items: center;
 
   & .brand {
     display: block;
     float: left;
+    // if the font-size of brand is different to font-size of nav, the vertical alignment of nav is affected and can only be fixed with a magic number
     // font-size: $textMD;
     padding: 20px 20px;
     text-decoration: none;
     // background: lightblue;
-  }
-
-  & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-  }
-
-  & li a {
-    display: block;
-    padding: 20px 20px;
-    // border-right: 1px solid $colourPrimaryLight;
-    text-decoration: none;
-  }
-
-  & li a:hover {
-    background-color: $colourPrimary;
-    color: $colourPrimaryFullTint;
   }
 }
