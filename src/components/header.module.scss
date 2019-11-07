@@ -1,11 +1,11 @@
 .header {
-  background-color: #fff;
+  background-color: grey;
   // background-color: $testColourPurple;
-  box-shadow: 1px 1px 4px 0 rgba(117, 68, 68, 0.1);
-  position: fixed;
-  width: 100%;
+  // box-shadow: 1px 1px 4px 0 rgba(117, 68, 68, 0.1);
+  // position: fixed;
+  // width: 100%;
   /* RW added - top 0 is needed when i add padding-top to the body */
-  top: 0;
+  // top: 0;
 
   & .brand {
     display: block;
