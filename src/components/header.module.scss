@@ -1,5 +1,8 @@
 .header {
   background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   // background-color: $testColourPurple;
   // box-shadow: 1px 1px 4px 0 rgba(117, 68, 68, 0.1);
   // position: fixed;
