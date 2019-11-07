@@ -9,7 +9,7 @@ const Nav = () => (
       {/* <label className={navStyles.menuIcon} htmlFor="menu-btn">
         <span className={navStyles.navIcon}></span>
       </label> */}
-      <ul className={navStyles.menu}>
+      <ul className={navStyles.navLinks}>
         <li>
           <Link to="/">Home</Link>
         </li>

@@ -1,4 +1,9 @@
-/* menu */
+/* nav */
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
 
 .main-menu {
   & .menu {
