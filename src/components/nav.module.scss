@@ -18,6 +18,11 @@
   margin-right: 2rem;
 }
 
+.burger {
+  cursor: pointer;
+  user-select: none;
+}
+
 .burger > div {
   width: 25px;
   height: 3px;
