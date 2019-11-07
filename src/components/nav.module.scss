@@ -66,17 +66,17 @@
   }
 
   & .menu-btn:checked ~ .menu-icon .nav-icon {
-    background: transparent;
+    // background: transparent;
   }
 
   & .menu-btn:checked ~ .menu-icon .nav-icon:before {
-    transform: rotate(-45deg);
-    top: 0;
+    // transform: rotate(-45deg);
+    // top: 0;
   }
 
   & .menu-btn:checked ~ .menu-icon .nav-icon:after {
-    transform: rotate(45deg);
-    top: 0;
+    // transform: rotate(45deg);
+    // top: 0;
   }
 
   & ul {
@@ -100,18 +100,18 @@
 
   @media (min-width: 800px) {
     & li {
-      float: left;
+      // float: left;
     }
     & li a {
-      padding: 20px 30px;
+      // padding: 20px 30px;
     }
     & .menu {
-      clear: none;
-      float: right;
-      max-height: none;
+      // clear: none;
+      // float: right;
+      // max-height: none;
     }
     & .menu-icon {
-      display: none;
+      // display: none;
     }
   }
 }
