@@ -1,8 +1,18 @@
 /* nav */
 
+.nav {
+  // width: 40%;
+  background: teal;
+}
+
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
+  background: red;
+}
+
+.nav-link {
+  margin-right: 2rem;
 }
 
 .main-menu {
@@ -85,17 +95,17 @@
   }
 
   & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
+    // margin: 0;
+    // padding: 0;
+    // list-style: none;
+    // overflow: hidden;
   }
 
   & li a {
-    display: block;
-    padding: 20px 20px;
+    // display: block;
+    // padding: 20px 20px;
     // border-right: 1px solid $colourPrimaryLight;
-    text-decoration: none;
+    // text-decoration: none;
   }
 
   & li a:hover {

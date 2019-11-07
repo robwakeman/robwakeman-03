@@ -4,23 +4,31 @@ import navStyles from "./nav.module.scss"
 
 const Nav = () => (
   <>
-    <nav className={navStyles.mainMenu}>
+    <nav className={navStyles.nav}>
       {/* <input className={navStyles.menuBtn} type="checkbox" id="menu-btn" /> */}
       {/* <label className={navStyles.menuIcon} htmlFor="menu-btn">
         <span className={navStyles.navIcon}></span>
       </label> */}
       <ul className={navStyles.navLinks}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className={navStyles.navLink}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/portfolio">Portfolio</Link>
+          <Link to="/portfolio" className={navStyles.navLink}>
+            Portfolio
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" className={navStyles.navLink}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className={navStyles.navLink}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
