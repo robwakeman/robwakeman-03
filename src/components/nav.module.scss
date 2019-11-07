@@ -15,11 +15,15 @@
   list-style: none;
   position: absolute;
   z-index: 10;
-  top: 0;
+  top: -100vh;
   left: 0;
   right: 0;
   height: 100vh;
   font-size: $textXL;
+}
+
+.nav-active {
+  top: 0;
 }
 
 .nav-item {
