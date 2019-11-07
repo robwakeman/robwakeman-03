@@ -9,23 +9,23 @@ const Nav = () => (
       {/* <label className={navStyles.menuIcon} htmlFor="menu-btn">
         <span className={navStyles.navIcon}></span>
       </label> */}
-      <ul className={navStyles.navLinks}>
-        <li>
+      <ul className={navStyles.navItems}>
+        <li className={navStyles.navItem}>
           <Link to="/" className={navStyles.navLink}>
             Home
           </Link>
         </li>
-        <li>
+        <li className={navStyles.navItem}>
           <Link to="/portfolio" className={navStyles.navLink}>
             Portfolio
           </Link>
         </li>
-        <li>
+        <li className={navStyles.navItem}>
           <Link to="/about" className={navStyles.navLink}>
             About
           </Link>
         </li>
-        <li>
+        <li className={navStyles.navItem}>
           <Link to="/contact" className={navStyles.navLink}>
             Contact
           </Link>

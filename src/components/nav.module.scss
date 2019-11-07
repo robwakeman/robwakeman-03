@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.nav-links {
+.nav-items {
   background: yellowgreen;
   display: flex;
   flex-direction: column;
@@ -19,10 +19,11 @@
   left: 0;
   right: 0;
   height: 100vh;
+  font-size: $textXL;
 }
 
-.nav-link {
-  margin-right: 2rem;
+.nav-item {
+  margin-top: 3rem;
 }
 
 .burger {
@@ -39,11 +40,17 @@
 }
 
 @media (min-width: 800px) {
-  .nav-links {
+  .nav-items {
     position: initial;
     z-index: initial;
     height: initial;
     flex-direction: row;
+    font-size: $textBaseSize;
+  }
+
+  .nav-item {
+    margin-right: 2rem;
+    margin-top: 0;
   }
 
   .burger {
