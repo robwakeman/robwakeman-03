@@ -3,6 +3,8 @@
 .nav {
   // width: 40%;
   background: teal;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -14,6 +16,13 @@
 
 .nav-link {
   margin-right: 2rem;
+}
+
+.burger > div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: orange;
 }
 
 .main-menu {
