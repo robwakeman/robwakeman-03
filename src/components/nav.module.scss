@@ -15,15 +15,17 @@
   list-style: none;
   position: absolute;
   z-index: 10;
-  top: -100vh;
+  top: 0;
   left: 0;
   right: 0;
   height: 100vh;
   font-size: $textXL;
+  transform: translateY(-100%);
 }
 
 .nav-active {
-  top: 0;
+  // top: 0;
+  transform: translateY(0);
 }
 
 .nav-item {
