@@ -10,7 +10,7 @@ const Nav = () => {
     navIsOpen ? setNavOpenState(false) : setNavOpenState(true)
   }
 
-  console.log(navIsOpen)
+  console.log("navIsOpen is", navIsOpen)
 
   return (
     <>
