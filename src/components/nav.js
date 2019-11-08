@@ -1,11 +1,17 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
 const Nav = () => {
   // js stuff here
-  // const [count, setCount] = useState(0);
-  const foo = true
+  const [navIsOpen, setNavOpenState] = useState(false)
+
+  function toggleNav() {
+    // if nav is open, set navIsOpen to false (i.e. close the nav) OR if it's not open, set navIsOpen to true (i.e. open the nav)
+    navIsOpen ? setNavOpenState(false) : setNavOpenState(true)
+  }
+
+  console.log(navIsOpen)
 
   return (
     <>
@@ -36,7 +42,7 @@ const Nav = () => {
             </Link>
           </li>
         </ul>
-        <div className={navStyles.burger}>
+        <div className={navStyles.burger} onClick={() => toggleNav()}>
           <div className={navStyles.line1}></div>
           <div className={navStyles.line2}></div>
           <div className={navStyles.line3}></div>
