@@ -2,6 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
+const toggleMenu = () => {
+  // toggle state here?
+}
+
 const Nav = () => (
   <>
     <nav className={navStyles.nav}>
@@ -31,7 +35,7 @@ const Nav = () => (
           </Link>
         </li>
       </ul>
-      <div className={navStyles.burger}>
+      <div className={navStyles.burger} onClick={() => toggleMenu()}>
         <div className={navStyles.line1}></div>
         <div className={navStyles.line2}></div>
         <div className={navStyles.line3}></div>
