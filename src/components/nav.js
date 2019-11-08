@@ -31,7 +31,7 @@ const Nav = () => (
           </Link>
         </li>
       </ul>
-      <div className={navStyles.burger} onClick={() => toggleMenu()}>
+      <div className={navStyles.burger}>
         <div className={navStyles.line1}></div>
         <div className={navStyles.line2}></div>
         <div className={navStyles.line3}></div>
