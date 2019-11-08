@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
 const Nav = () => {
-  // js stuff here
   const [navIsOpen, setNavOpenState] = useState(false)
 
   function toggleNav() {
