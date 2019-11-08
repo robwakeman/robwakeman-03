@@ -2,10 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import navStyles from "./nav.module.scss"
 
-const toggleMenu = () => {
-  // toggle state here?
-}
-
 const Nav = () => (
   <>
     <nav className={navStyles.nav}>
