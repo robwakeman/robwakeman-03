@@ -15,13 +15,22 @@ const Nav = () => {
 
   return (
     <>
-      {/* <nav className={navStyles.nav}> */}
-      <nav className={`${navStyles.nav} ${navStyles.navActive}`}>
+      <nav className={navStyles.nav}>
+        {/* <nav className={`${navStyles.nav} ${navStyles.navActive}`}> */}
+        {/* <nav
+        className={`${navStyles.nav} {!navIsOpen ? ${navStyles.navActive} : ''}`}
+      > */}
         {/* <input className={navStyles.menuBtn} type="checkbox" id="menu-btn" /> */}
         {/* <label className={navStyles.menuIcon} htmlFor="menu-btn">
           <span className={navStyles.navIcon}></span>
         </label> */}
-        <ul className={navStyles.navItems}>
+        <ul
+          className={
+            !navIsOpen
+              ? `${navStyles.navItems} ${navStyles.navActive}`
+              : `${navStyles.navItems} `
+          }
+        >
           <li className={navStyles.navItem}>
             <Link to="/" className={navStyles.navLink}>
               Home
