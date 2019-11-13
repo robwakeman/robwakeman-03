@@ -504,3 +504,33 @@ RW modified from:
 Responsive Pure CSS Menu Tutorial (No Javascript)
 https://www.youtube.com/watch?v=sjrp1FEHnyA
 https://medium.com/creative-technology-concepts-code/responsive-mobile-dropdown-navigation-using-css-only-7218e4498a99
+
+## TODO
+
+Fix nav - something like:
+ul.nav-items is hidden > 800px if burger menu is closed
+
+Change to reset with universal selector?
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom; /* Thanks, Jen Simmons */
+}
+```
+
+I might want to borrow bits from
+https://css-tricks.com/css-remedy/
+https://zellwk.com/blog/css-reset/
