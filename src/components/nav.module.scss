@@ -20,19 +20,12 @@
   right: 0;
   height: 100vh;
   font-size: $textXL;
-  // transform: translateY(-100%);
   transform: translate3d(0, -100%, 0);
-  // if below removed, it closes without a transition, but this seems to be the only way to prevent the transition flash closing when resizing from > 800px to < 800px when the menu is closed
   transition: transform 0.2s ease-in;
-  // transition: none;
 }
 
 .nav-active {
-  // transform: translateY(0);
   transform: translate3d(0, 0, 0);
-  // added
-  // transition: transform 0.3s ease-in;
-  // transition: none;
 }
 
 .nav-item {
@@ -66,10 +59,7 @@
     height: initial;
     flex-direction: row;
     font-size: $textBaseSize;
-    // added this
-    // transform: translateY(0);
     transform: translate3d(0, 0, 0);
-    // transform: initial;
     transition: none;
   }
 

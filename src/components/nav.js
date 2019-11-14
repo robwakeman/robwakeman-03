@@ -16,13 +16,7 @@ const Nav = () => {
   return (
     <>
       <nav className={navStyles.nav}>
-        <ul
-          className={
-            navIsOpen
-              ? `${navStyles.navItems} ${navStyles.navActive}`
-              : `${navStyles.navItems} `
-          }
-        >
+        <ul className={navIsOpen ? `${navStyles.navItems} ${navStyles.navActive}` : `${navStyles.navItems} `}>
           <li className={navStyles.navItem}>
             <Link to="/" className={navStyles.navLink}>
               Home
