@@ -59,9 +59,14 @@ html {
 }
 img,
 video {
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
+
+img {
+  vertical-align: bottom; /* Thanks, Jen Simmons */
+}
+
 iframe {
   border: 0;
 }
