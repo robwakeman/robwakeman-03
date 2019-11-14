@@ -20,12 +20,19 @@
   right: 0;
   height: 100vh;
   font-size: $textXL;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in;
+  // transform: translateY(-100%);
+  transform: translate3d(0, -100%, 0);
+  // if below removed, it closes without a transition, but this seems to be the only way to prevent the transition flash closing when resizing from > 800px to < 800px when the menu is closed
+  transition: transform 0.2s ease-in;
+  // transition: none;
 }
 
 .nav-active {
-  transform: translateY(0);
+  // transform: translateY(0);
+  transform: translate3d(0, 0, 0);
+  // added
+  // transition: transform 0.3s ease-in;
+  // transition: none;
 }
 
 .nav-item {
@@ -35,7 +42,7 @@
 
 .nav-active .nav-item {
   opacity: 1;
-  transition: opacity 0.4s ease-in 0.3s;
+  transition: opacity 0.3s ease-in 0.3s;
 }
 
 .burger {
@@ -53,17 +60,24 @@
 
 @media (min-width: 800px) {
   .nav-items {
+    background: cornsilk;
     position: initial;
     z-index: initial;
     height: initial;
     flex-direction: row;
     font-size: $textBaseSize;
+    // added this
+    // transform: translateY(0);
+    transform: translate3d(0, 0, 0);
+    // transform: initial;
+    transition: none;
   }
 
   .nav-item {
     margin-right: 2rem;
     margin-top: 0;
     opacity: 0;
+    opacity: 1;
   }
 
   .burger {

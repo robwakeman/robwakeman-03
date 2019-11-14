@@ -507,8 +507,44 @@ https://medium.com/creative-technology-concepts-code/responsive-mobile-dropdown-
 
 ## TODO
 
-Fix nav - something like:
-ul.nav-items is hidden > 800px if burger menu is closed
+### Prevent transition from firing on resize
+
+on resize browser down to < 800px, the transition to close the small screen menu fires. This is unwanted behaviour and even Chris Coyier wrote about a possible solution.:
+https://css-tricks.com/stop-animations-during-window-resizing/
+
+I don't know how to stop that transition firing with CSS alone, i.e. it looks like JS is required. Here's another solution, something like:
+
+```javascript
+window.addEventListener("resize", () => {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.add(noTransition)
+  })
+  clearTimeout(resize)
+  resize = setTimeout(resizingComplete, 500)
+})
+
+function resizingComplete() {
+  pageHeader.querySelectorAll("*").forEach(function(el) {
+    el.classList.remove(noTransition)
+  })
+}
+```
+
+but I'd need to implement it in React, of course.
+https://codepen.io/tutsplus/pen/xoaRmr
+
+Other possible solutions here:
+https://stackoverflow.com/questions/28217233/css-transitions-triggers-on-browser-resize
+https://www.npmjs.com/package/react-resize-detector
+https://www.pluralsight.com/guides/render-window-resize-react
+https://www.pluralsight.com/guides/re-render-react-component-on-window-resize
+
+Is the following now fixed?:
+
+_Fix nav - something like:
+ul.nav-items is hidden > 800px if burger menu is closed_
+
+### Change CSS reset
 
 Change to reset with universal selector?
 

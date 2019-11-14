@@ -6,8 +6,9 @@ const Nav = () => {
   const [navIsOpen, setNavOpenState] = useState(false)
 
   function toggleNav() {
-    // if nav is open, set navIsOpen to false (i.e. close the nav) OR if it's not open, set navIsOpen to true (i.e. open the nav)
-    navIsOpen ? setNavOpenState(false) : setNavOpenState(true)
+    // If nav is open, set navIsOpen to false (i.e. close the nav) OR if it's not open, set navIsOpen to true (i.e. open the nav). Default state: navIsOpen false.
+    // navIsOpen ? setNavOpenState(false) : setNavOpenState(true)
+    setNavOpenState(!navIsOpen)
   }
 
   console.log("navIsOpen is", navIsOpen)
@@ -17,7 +18,7 @@ const Nav = () => {
       <nav className={navStyles.nav}>
         <ul
           className={
-            !navIsOpen
+            navIsOpen
               ? `${navStyles.navItems} ${navStyles.navActive}`
               : `${navStyles.navItems} `
           }
