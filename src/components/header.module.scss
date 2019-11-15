@@ -1,5 +1,6 @@
 .header {
-  background-color: grey;
+  // background-color: grey;
+  height: 35px; // height of burger is 29px (including aggregated height of divs and vertical margins), so 35px accommates it - need to specify it here to fix the same heigh for both small and large screens
   line-height: initial;
   display: flex;
   justify-content: space-between;
@@ -13,6 +14,6 @@
   & .brand {
     font-size: $textMD;
     text-transform: uppercase;
-    background: lightgreen;
+    // background: lightgreen;
   }
 }

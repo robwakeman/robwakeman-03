@@ -1,7 +1,7 @@
 /* nav */
 
 .nav {
-  background: teal;
+  // background: teal;
   display: flex;
   align-items: center;
 }
@@ -53,7 +53,8 @@
 
 @media (min-width: 800px) {
   .nav-items {
-    background: cornsilk;
+    // background: cornsilk;
+    background-color: transparent;
     position: initial;
     z-index: initial;
     height: initial;
