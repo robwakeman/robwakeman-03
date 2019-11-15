@@ -9,7 +9,7 @@ body {
   line-height: 1.8;
   color: $textColour;
   // background: $testColourOrange;
-  // padding-top: 90px; // to prevent content from being hidden under fixed nav
+  padding-top: 29px; // (height of nav) - to prevent content from being hidden under fixed nav
 }
 
 @media (min-width: 600px) {
