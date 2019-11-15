@@ -32,5 +32,8 @@ $textSM: $textBaseSize / $textScaleRatio;
 $textMD: $textBaseSize * $textScaleRatio;
 $textLG: $textBaseSize * $textScaleRatio * $textScaleRatio;
 $textXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio;
-$textXXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio *
-  $textScaleRatio;
+$textXXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio * $textScaleRatio;
+
+// spacing
+
+$headerSideMargin: 2rem;

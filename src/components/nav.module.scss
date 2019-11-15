@@ -29,7 +29,7 @@
 }
 
 .nav-item {
-  margin-top: 3rem;
+  margin-top: $headerSideMargin;
   opacity: 0;
 }
 
@@ -39,6 +39,7 @@
 }
 
 .burger {
+  margin-right: $headerSideMargin;
   cursor: pointer;
   user-select: none;
   z-index: 20;
@@ -53,13 +54,17 @@
 
 @media (min-width: 800px) {
   .nav-items {
-    // background: cornsilk;
+    // font-size: $textLG;
+    font-size: $textMD;
+    // text-transform: uppercase;
     background-color: transparent;
+    // background-color: cornsilk;
+    margin-right: $headerSideMargin;
     position: initial;
     z-index: initial;
     height: initial;
     flex-direction: row;
-    font-size: $textBaseSize;
+
     transform: translate3d(0, 0, 0);
     transition: none;
   }
@@ -69,6 +74,10 @@
     margin-top: 0;
     opacity: 0;
     opacity: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .burger {
