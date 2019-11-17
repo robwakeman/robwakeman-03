@@ -1,21 +1,28 @@
 .header {
   // background-color: lightgrey;
+  background-color: #fff;
   height: 80px; // height of burger is 29px (including aggregated height of divs and vertical margins), so 35px accommodates it - need to specify it here to fix the same heigh for both small and large screens
   line-height: initial;
   display: flex;
   justify-content: space-between;
   align-items: center;
   // background-color: $testColourPurple;
+  width: 90%;
   position: fixed;
-  width: 100%;
   top: 0; // top 0 is needed when I add padding-top to the body
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  // box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
   z-index: 10;
 
   & .brand {
     font-size: $textLG;
     text-transform: uppercase;
     font-weight: bold;
-    margin-left: $headerSideMargin;
+    // margin-left: $headerSideMargin;
     // background: lightgreen;
   }
 }
