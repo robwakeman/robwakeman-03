@@ -26,12 +26,12 @@
   margin-right: -10%;
 }
 
-.nav-active {
+.nav-active .nav-items {
   transform: translate3d(0, 0, 0);
 }
 
 .nav-item {
-  margin-top: $headerSideMargin;
+  margin-top: 3rem;
   opacity: 0;
 }
 
@@ -129,7 +129,7 @@
   .nav-item {
     margin-right: 2rem;
     margin-top: 0;
-    opacity: 0;
+    // opacity: 0;
     opacity: 1;
 
     &:last-child {

@@ -15,8 +15,8 @@ const Nav = () => {
 
   return (
     <>
-      <nav className={navStyles.nav}>
-        <ul className={navIsOpen ? `${navStyles.navItems} ${navStyles.navActive}` : `${navStyles.navItems} `}>
+      <nav className={navIsOpen ? `${navStyles.nav} ${navStyles.navActive}` : `${navStyles.nav} `}>
+        <ul className={navStyles.navItems}>
           <li className={navStyles.navItem}>
             <Link to="/" className={navStyles.navLink}>
               Home
