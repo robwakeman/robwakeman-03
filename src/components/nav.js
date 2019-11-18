@@ -39,9 +39,10 @@ const Nav = () => {
           </li>
         </ul>
         <div className={navStyles.burger} onClick={() => toggleNav()}>
-          <div className={navStyles.line1}></div>
-          <div className={navStyles.line2}></div>
-          <div className={navStyles.line3}></div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </nav>
     </>

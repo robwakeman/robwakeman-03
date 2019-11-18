@@ -45,13 +45,67 @@
   cursor: pointer;
   user-select: none;
   z-index: 20;
+
+  // new burger styles
+  width: 60px;
+  height: 45px;
+  position: relative;
+  transition: 0.5s ease-in-out;
 }
 
-.burger > div {
-  width: 25px;
+.burger span {
+  display: block;
+  position: absolute;
   height: 3px;
-  margin: 5px;
-  background-color: #000;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+// .burger > div {
+//   width: 25px;
+//   height: 3px;
+//   margin: 5px;
+//   background-color: #000;
+// }
+
+/* Icon 3 */
+
+.burger span:nth-child(1) {
+  top: 0px;
+}
+
+.burger span:nth-child(2),
+.burger span:nth-child(3) {
+  top: 18px;
+}
+
+.burger span:nth-child(4) {
+  top: 36px;
+}
+
+.nav-active .burger span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav-active .burger span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.nav-active .burger span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.nav-active .burger span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
 }
 
 @media (min-width: 800px) {
