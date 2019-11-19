@@ -1,6 +1,4 @@
 .header {
-  // background-color: yellow;
-  background-color: #fff;
   background-color: $colourSecondary;
   color: #ffffff;
   height: 80px; // height of burger is 29px (including aggregated height of divs and vertical margins), so 35px accommodates it - need to specify it here to fix the same heigh for both small and large screens
@@ -9,21 +7,16 @@
   right: 0;
   left: 0;
   display: flex;
-  // justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 25px rgba(0, 0, 0, 0.2);
   // border-bottom: 1px solid #eee;
   z-index: 10;
 }
 
 .header-inner {
-  // background-color: lightgray;
-  // background-color: #fff;
   line-height: initial;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: $testColourPurple;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -32,7 +25,5 @@
     font-size: $textLG;
     text-transform: uppercase;
     font-weight: bold;
-    // margin-left: $headerSideMargin;
-    // background: lightgreen;
   }
 }
