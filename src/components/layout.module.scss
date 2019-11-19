@@ -10,6 +10,9 @@ body {
   color: $textColour;
   // background: $testColourOrange;
   padding-top: 80px; // (height of nav) - to prevent content from being hidden under fixed nav
+  // background: linear-gradient(to bottom, #fffdd5, #ffffff);
+  // background: linear-gradient(to bottom, #ffffff, #fff952);
+  // background-color: #b4f5f2;
 }
 
 @media (min-width: 600px) {
@@ -86,7 +89,8 @@ button {
   margin: 1rem 0;
   padding: 1rem 1.75rem;
   background-color: $colourPrimary;
-  color: $colourPrimaryFullTint;
+  // color: $colourPrimaryFullTint;
+  // color: $colourPrimaryFullTint;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -107,7 +111,8 @@ button {
   // transition: background 0.1s ease-out;
 
   &:hover {
-    color: $colourPrimaryFullTint;
+    // color: $colourPrimaryFullTint;
+    // color: $colourSecondary;
     background-color: $colourPrimary;
   }
 }

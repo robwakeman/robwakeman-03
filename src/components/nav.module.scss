@@ -7,7 +7,7 @@
 }
 
 .nav-items {
-  background: yellowgreen;
+  background: $colourSecondary;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +48,9 @@
 
   // new burger styles
   width: 60px;
+  width: 40px;
   height: 45px;
+  height: 23px;
   position: relative;
   transition: 0.5s ease-in-out;
 }
@@ -58,7 +60,7 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #d3531a;
+  background: $colourPrimary;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -82,14 +84,17 @@
 .burger span:nth-child(2),
 .burger span:nth-child(3) {
   top: 18px;
+  top: 10px;
 }
 
 .burger span:nth-child(4) {
   top: 36px;
+  top: 20px;
 }
 
 .nav-active .burger span:nth-child(1) {
   top: 18px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
@@ -104,6 +109,7 @@
 
 .nav-active .burger span:nth-child(4) {
   top: 18px;
+  top: 10px;
   width: 0%;
   left: 50%;
 }
