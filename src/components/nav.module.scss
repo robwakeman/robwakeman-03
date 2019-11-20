@@ -38,6 +38,10 @@
   transition: opacity 0.3s ease-in 0.3s;
 }
 
+.nav-link:hover {
+  color: $colourPrimary;
+}
+
 .burger {
   // margin-right: $headerSideMargin;
   cursor: pointer;
