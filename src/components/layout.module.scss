@@ -75,17 +75,16 @@ p {
  * Buttons - TEMP
  */
 
-button {
+.cta {
   margin: 1rem 0;
   padding: 1rem 1.75rem;
-  background-color: $colourPrimary;
+  border: 1px solid $colourSecondary;
   border-radius: 20px;
-  border: none;
   cursor: pointer;
+  transition: background 0.2s ease-out;
 
   &:hover {
-    background-color: $colourPrimaryLight;
-    color: #fff;
+    background-color: $colourPrimary;
   }
 }
 
@@ -95,8 +94,8 @@ button {
 
 .content a {
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
-  border-bottom: 1px solid $colourPrimary;
-  // transition: background 0.1s ease-out;
+  border-bottom: 4px solid $colourPrimary;
+  transition: background 0.2s ease-out;
 
   &:hover {
     background-color: $colourPrimary;

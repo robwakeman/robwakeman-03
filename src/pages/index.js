@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import layoutStyles from "../components/layout.module.scss"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -14,7 +16,7 @@ const IndexPage = () => (
       Working with designers and clients, I produce websites that work for users
       and meet business goals.
     </p>
-    <button>Get in touch</button>
+    <button className={layoutStyles.cta}>Get in touch</button>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
       rem itaque corrupti quia molestiae cumque. Facilis voluptate at.{" "}
