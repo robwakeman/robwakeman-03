@@ -38,6 +38,10 @@
   transition: opacity 0.3s ease-in 0.3s;
 }
 
+.nav-link {
+  position: relative;
+}
+
 .nav-link:hover {
   color: $colourPrimary;
 }
@@ -131,6 +135,24 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  .nav-link::before {
+    content: "";
+    display: block;
+    height: 7px;
+    background-color: $colourPrimary;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -27px;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: 0 50%;
   }
 
   .burger {
