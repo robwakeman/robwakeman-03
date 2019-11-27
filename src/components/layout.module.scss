@@ -76,6 +76,7 @@ p {
  */
 
 .cta {
+  display: inline-block;
   margin: 1rem 0;
   padding: 1rem 1.75rem;
   border: 1px solid $colourSecondary;
@@ -92,7 +93,7 @@ p {
  * Links - TEMP
  */
 
-.content a {
+.content p a {
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
   border-bottom: 4px solid $colourPrimary;
   transition: background 0.2s ease-out;

@@ -16,7 +16,10 @@ const IndexPage = () => (
       Working with designers and clients, I produce websites that work for users
       and meet business goals.
     </p>
-    <button className={layoutStyles.cta}>Get in touch</button>
+    <Link to="/contact" className={layoutStyles.cta}>
+      Get in touch
+    </Link>
+    {/* <a href="/contact" className={layoutStyles.cta}>Get in touch</a> */}
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
       rem itaque corrupti quia molestiae cumque. Facilis voluptate at.{" "}
