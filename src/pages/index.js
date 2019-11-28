@@ -19,7 +19,6 @@ const IndexPage = () => (
     <Link to="/contact" className={layoutStyles.cta}>
       Get in touch
     </Link>
-    {/* <a href="/contact" className={layoutStyles.cta}>Get in touch</a> */}
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
       rem itaque corrupti quia molestiae cumque. Facilis voluptate at.{" "}
