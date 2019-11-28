@@ -25,15 +25,15 @@ $testColourGold: gold;
 
 $fontPrimary: "Source Sans Pro", sans-serif;
 $textColour: #222;
-$textBaseSize: 18px;
+$textBaseSize: 1.8rem; // 18px when html {font-size: 62.5%}
 $textScaleRatio: 1.2;
 
 $textXS: $textBaseSize / ($textScaleRatio * $textScaleRatio);
 $textSM: $textBaseSize / $textScaleRatio;
-$textMD: $textBaseSize * $textScaleRatio;
-$textLG: $textBaseSize * $textScaleRatio * $textScaleRatio;
-$textXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio;
-$textXXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio * $textScaleRatio;
+$textMD: $textBaseSize;
+$textLG: $textBaseSize * $textScaleRatio;
+$textXL: $textBaseSize * $textScaleRatio * $textScaleRatio;
+$textXXL: $textBaseSize * $textScaleRatio * $textScaleRatio * $textScaleRatio;
 
 // spacing
 

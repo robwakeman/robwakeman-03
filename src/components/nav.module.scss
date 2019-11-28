@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   height: 100vh;
-  font-size: $textXL;
+  font-size: $textXXL;
   transform: translate3d(0, -100%, 0);
   transition: transform 0.2s ease-in;
   margin-left: -10%;
@@ -113,7 +113,6 @@
 
 @media (min-width: 800px) {
   .nav-items {
-    // font-size: $textLG;
     font-size: $textMD;
     // text-transform: uppercase;
     background-color: transparent;
