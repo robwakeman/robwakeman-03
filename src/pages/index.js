@@ -31,6 +31,7 @@ const IndexPage = () => (
       <li>CSS/Sass</li>
       <li>JavaScript</li>
       <li>WordPress</li>
+      <li>Bootstrap</li>
     </ul>
 
     <h3>Personal experience with:</h3>
