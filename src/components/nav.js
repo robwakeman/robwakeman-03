@@ -24,22 +24,38 @@ const Nav = () => {
       >
         <ul className={navStyles.navItems}>
           <li className={navStyles.navItem}>
-            <Link to="/" className={navStyles.navLink}>
+            <Link
+              activeClassName={navStyles.navLinkActive}
+              to="/"
+              className={navStyles.navLink}
+            >
               Home
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/work/" className={navStyles.navLink}>
+            <Link
+              activeClassName={navStyles.navLinkActive}
+              to="/work/"
+              className={navStyles.navLink}
+            >
               Work
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/about/" className={navStyles.navLink}>
+            <Link
+              activeClassName={navStyles.navLinkActive}
+              to="/about/"
+              className={navStyles.navLink}
+            >
               About
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/contact/" className={navStyles.navLink}>
+            <Link
+              activeClassName={navStyles.navLinkActive}
+              to="/contact/"
+              className={navStyles.navLink}
+            >
               Contact
             </Link>
           </li>
@@ -49,7 +65,7 @@ const Nav = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub logo
+              <img src="../images/github-logo.svg" alt="GitHub logo" />
             </a>
           </li>
         </ul>
