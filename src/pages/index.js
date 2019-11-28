@@ -10,11 +10,10 @@ import layoutStyles from "../components/layout.module.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>I'm Rob and I make things for the web</h1>
-    <p>I’m a front-end developer based in London.</p>
+    <h1>I'm Rob, a front-end developer</h1>
     <p>
-      Working with designers and clients, I produce websites that work for users
-      and meet business goals.
+      Based in London, I work with designers and clients to produce websites
+      that work for users and meet business goals.
     </p>
     <Link to="/contact/" className={layoutStyles.cta}>
       Get in touch
