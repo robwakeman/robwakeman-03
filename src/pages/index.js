@@ -12,12 +12,34 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>I'm Rob, a front-end developer</h1>
     <p>
-      Based in London, I work with designers and clients to produce websites
-      that work for users and meet business goals.
+      Based in London, I work with designers and clients to{" "}
+      <Link to="/work/">produce websites</Link> that work for users and meet
+      business goals.
     </p>
     <Link to="/contact/" className={layoutStyles.cta}>
       Get in touch
     </Link>
+    <p>I care strongly about user experience.</p>
+    <p>
+      Clients include: Tate and Central Saint Martins (University of the Arts
+      London)
+    </p>
+
+    <h3>Commercial experience with:</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS/Sass</li>
+      <li>JavaScript</li>
+      <li>WordPress</li>
+    </ul>
+
+    <h3>Personal experience with:</h3>
+    <ul>
+      <li>React</li>
+      <li>Gatsby</li>
+      <li>Task runners</li>
+      <li>Git</li>
+    </ul>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
       rem itaque corrupti quia molestiae cumque. Facilis voluptate at.{" "}

@@ -15,7 +15,13 @@ const Nav = () => {
 
   return (
     <>
-      <nav className={navIsOpen ? `${navStyles.nav} ${navStyles.navActive}` : `${navStyles.nav} `}>
+      <nav
+        className={
+          navIsOpen
+            ? `${navStyles.nav} ${navStyles.navActive}`
+            : `${navStyles.nav} `
+        }
+      >
         <ul className={navStyles.navItems}>
           <li className={navStyles.navItem}>
             <Link to="/" className={navStyles.navLink}>
@@ -23,17 +29,17 @@ const Nav = () => {
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/work" className={navStyles.navLink}>
+            <Link to="/work/" className={navStyles.navLink}>
               Work
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/about" className={navStyles.navLink}>
+            <Link to="/about/" className={navStyles.navLink}>
               About
             </Link>
           </li>
           <li className={navStyles.navItem}>
-            <Link to="/contact" className={navStyles.navLink}>
+            <Link to="/contact/" className={navStyles.navLink}>
               Contact
             </Link>
           </li>
