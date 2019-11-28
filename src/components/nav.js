@@ -43,6 +43,15 @@ const Nav = () => {
               Contact
             </Link>
           </li>
+          <li className={navStyles.navItem}>
+            <a
+              href="https://github.com/robwakeman"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub logo
+            </a>
+          </li>
         </ul>
         <div className={navStyles.burger} onClick={() => toggleNav()}>
           <span></span>
