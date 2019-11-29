@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
+import GitHubLogo from "../images/github-logo.svg"
 import navStyles from "./nav.module.scss"
 
 const Nav = () => {
@@ -64,8 +65,9 @@ const Nav = () => {
               href="https://github.com/robwakeman"
               target="_blank"
               rel="noopener noreferrer"
+              className={navStyles.githubLink}
             >
-              <img src="../images/github-logo.svg" alt="GitHub logo" />
+              <GitHubLogo className={navStyles.github} alt="GitHub" />
             </a>
           </li>
         </ul>
