@@ -30,16 +30,19 @@ const IndexPage = () => (
       <li>HTML</li>
       <li>CSS/Sass</li>
       <li>JavaScript</li>
+      <li>jQuery</li>
       <li>WordPress</li>
       <li>Bootstrap</li>
+      <li>Task runners</li>
+      <li>Git</li>
     </ul>
 
-    <h3>Personal experience with:</h3>
+    <h3>Other technologies I have used:</h3>
     <ul>
       <li>React</li>
       <li>Gatsby</li>
-      <li>Task runners</li>
-      <li>Git</li>
+      <li>Angular</li>
+      <li>PHP</li>
     </ul>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe veritatis
