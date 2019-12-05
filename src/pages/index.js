@@ -50,24 +50,19 @@ const IndexPage = () => (
     </section>
 
     <section className={`${layoutStyles.section} ${layoutStyles.skillsDemo}`}>
-      <p>
-        HTML, CSS, JavaScript skills demonstrated on:
-        <ul>
-          <li>
-            <a href="https://github.com/robwakeman/book-reading-list">
-              book-reading-list
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/robwakeman/npm-scripts-igloo">
-              npm-scripts-igloo
-            </a>
-          </li>
-        </ul>
-        laudantium earum ipsum, fugiat, suscipit dolorum nostrum quisquam
-        accusamus, ipsam culpa fugit veritatis. Odio, soluta nihil
-        exercitationem.
-      </p>
+      <p>HTML, CSS, JavaScript skills demonstrated by:</p>
+      <ul>
+        <li>
+          <a href="https://github.com/robwakeman/book-reading-list">
+            book-reading-list
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/robwakeman/npm-scripts-igloo">
+            npm-scripts-igloo
+          </a>
+        </li>
+      </ul>
     </section>
 
     <p>

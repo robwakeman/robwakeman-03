@@ -106,13 +106,15 @@ p {
  * Buttons - TEMP
  */
 
-.cta {
-  display: inline-block;
-  margin: 1rem 0;
-  padding: 1rem 1.75rem;
-  border: 1px solid $colourSecondary;
-  border-radius: 20px;
-  cursor: pointer;
+/**
+ * Links - TEMP
+ */
+
+.content p a,
+.content li a {
+  white-space: nowrap;
+  box-shadow: inset 0 -2px 0 0 $colourPrimary;
+  border-bottom: 4px solid $colourPrimary;
   transition: background 0.2s ease-out;
 
   &:hover {
@@ -120,14 +122,13 @@ p {
   }
 }
 
-/**
- * Links - TEMP
- */
-
-.content p a {
-  white-space: nowrap;
-  box-shadow: inset 0 -2px 0 0 $colourPrimary;
-  border-bottom: 4px solid $colourPrimary;
+.cta {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 1rem 1.75rem;
+  border: 1px solid $colourSecondary;
+  border-radius: 20px;
+  cursor: pointer;
   transition: background 0.2s ease-out;
 
   &:hover {
