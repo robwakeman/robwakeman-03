@@ -84,18 +84,18 @@ a {
  * Typography
  */
 
-h1 {
-  font-size: $textXL;
-  // font-weight: bold;
+h1,
+h2 {
   line-height: 1.4;
   margin-bottom: 0.8em;
 }
 
+h1 {
+  font-size: $textXL;
+}
+
 h2 {
   font-size: $textLG;
-  // font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.8em;
 }
 
 p {
