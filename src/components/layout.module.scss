@@ -80,7 +80,7 @@ a {
   margin-bottom: 6rem;
 }
 
-ul {
+.content ul {
   margin-bottom: 3rem;
 }
 
@@ -143,3 +143,12 @@ p {
 /**
  * Other - TEMP
  */
+
+.skills {
+  padding: 2rem;
+  background: #f1f1f1;
+}
+
+.skills ul:last-child {
+  margin-bottom: 0;
+}

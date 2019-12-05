@@ -28,7 +28,7 @@ const IndexPage = () => (
     </section>
 
     <section className={`${layoutStyles.section} ${layoutStyles.skills}`}>
-      <h2>Commercial experience with:</h2>
+      <h2>Commercial experience:</h2>
       <ul>
         <li>HTML</li>
         <li>CSS/Sass</li>
