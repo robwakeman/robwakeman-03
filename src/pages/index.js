@@ -65,14 +65,6 @@ const IndexPage = () => (
       </ul>
     </section>
 
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quia at
-      nobis aliquid officia blanditiis provident vero enim repellat, inventore.
-      Excepturi quod reiciendis soluta voluptatem odit harum sunt eveniet cum,
-      doloribus quia rem maxime corrupti neque cupiditate, perferendis modi,
-      quis temporibus iusto alias?
-    </p>
-
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <ImageAstronaut />
     </div>
