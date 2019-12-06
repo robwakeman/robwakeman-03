@@ -11,8 +11,8 @@ const WorkPage = () => (
     <SEO title="Home" />
     <h1>Work</h1>
     <p>
-      Latest projects on GitHub demonstrating HTML, CSS/Sass, JavaScript,
-      WordPress/PHP:
+      Latest projects on GitHub demonstrating HTML, CSS/Sass, JavaScript, React,
+      Gatsby, WordPress:
     </p>
 
     <ul>
@@ -21,12 +21,23 @@ const WorkPage = () => (
           href="https://github.com/robwakeman/book-reading-list"
           target="_blank"
         >
-          book-reading-list
+          <b>robwakeman-03 (TO AMEND LINK)</b>
         </a>
+        <p>Rob Wakeman personal site built in Gatsby</p>
+      </li>
+      <li>
+        <a
+          href="https://github.com/robwakeman/book-reading-list"
+          target="_blank"
+        >
+          <b>book-reading-list</b>
+        </a>
+        <p>Book reading list app</p>
       </li>
       <li>
         <a href="https://github.com/robwakeman/short-jokes" target="_blank">
-          short-jokes
+          <b>short-jokes</b>
+          <p>React app that displays short jokes</p>
         </a>
       </li>
       <li>
@@ -34,17 +45,25 @@ const WorkPage = () => (
           href="https://github.com/robwakeman/npm-scripts-igloo"
           target="_blank"
         >
-          npm-scripts-igloo
+          <b>npm-scripts-igloo</b>
+          <p>
+            Student and teacher list generator, CSS animations, npm scripts
+            build process with Sass and Babel
+          </p>
         </a>
       </li>
       <li>
         <a href="https://github.com/robwakeman/rwajaxform" target="_blank">
-          rwajaxform
+          <b>rwajaxform</b>
+          <p>
+            Custom WordPress contact form plugin integrated with Bootstrap 4
+            validation
+          </p>
         </a>
       </li>
     </ul>
 
-    <h2>Client work</h2>
+    <h2>Earlier client work</h2>
 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum
