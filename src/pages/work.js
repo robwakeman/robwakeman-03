@@ -11,10 +11,41 @@ const WorkPage = () => (
     <SEO title="Home" />
     <h1>Work</h1>
     <p>
-      Work page. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Exercitationem, ratione ex at atque perspiciatis blanditiis quaerat sequi.
-      Beatae, a eos.
+      Latest projects on GitHub demonstrating HTML, CSS/Sass, JavaScript,
+      WordPress/PHP:
     </p>
+
+    <ul>
+      <li>
+        <a
+          href="https://github.com/robwakeman/book-reading-list"
+          target="_blank"
+        >
+          book-reading-list
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/robwakeman/short-jokes" target="_blank">
+          short-jokes
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/robwakeman/npm-scripts-igloo"
+          target="_blank"
+        >
+          npm-scripts-igloo
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/robwakeman/rwajaxform" target="_blank">
+          rwajaxform
+        </a>
+      </li>
+    </ul>
+
+    <h2>Client work</h2>
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo illum
       dicta rem, quibusdam veniam corrupti eos? Sed fuga reprehenderit, facere

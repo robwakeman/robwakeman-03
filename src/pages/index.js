@@ -53,12 +53,18 @@ const IndexPage = () => (
       <p>HTML, CSS, JavaScript skills demonstrated by:</p>
       <ul>
         <li>
-          <a href="https://github.com/robwakeman/book-reading-list">
+          <a
+            href="https://github.com/robwakeman/book-reading-list"
+            target="_blank"
+          >
             book-reading-list
           </a>
         </li>
         <li>
-          <a href="https://github.com/robwakeman/npm-scripts-igloo">
+          <a
+            href="https://github.com/robwakeman/npm-scripts-igloo"
+            target="_blank"
+          >
             npm-scripts-igloo
           </a>
         </li>
