@@ -50,7 +50,7 @@ const IndexPage = () => (
     </section>
 
     <section className={`${layoutStyles.section} ${layoutStyles.skillsDemo}`}>
-      <p>HTML, CSS, JavaScript skills demonstrated by:</p>
+      <p>HTML, CSS, JavaScript skills demonstrated by these GitHub projects:</p>
       <ul>
         <li>
           <a
