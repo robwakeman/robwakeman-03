@@ -43,8 +43,8 @@ const WorkPage = () => (
           rel="noopener noreferrer"
         >
           <b>short-jokes</b>
-          <p>React app that displays short jokes</p>
         </a>
+        <p>React app that displays short jokes</p>
       </li>
       <li>
         <a
@@ -53,11 +53,11 @@ const WorkPage = () => (
           rel="noopener noreferrer"
         >
           <b>npm-scripts-igloo</b>
-          <p>
-            Student and teacher list generator, CSS animations, npm scripts
-            build process with Sass and Babel
-          </p>
         </a>
+        <p>
+          Student and teacher list generator, CSS animations, npm scripts build
+          process with Sass and Babel
+        </p>
       </li>
       <li>
         <a
@@ -66,11 +66,11 @@ const WorkPage = () => (
           rel="noopener noreferrer"
         >
           <b>rwajaxform</b>
-          <p>
-            Custom WordPress contact form plugin integrated with Bootstrap 4
-            validation
-          </p>
         </a>
+        <p>
+          Custom WordPress contact form plugin integrated with Bootstrap 4
+          validation
+        </p>
       </li>
     </ul>
 
