@@ -20,6 +20,7 @@ const WorkPage = () => (
         <a
           href="https://github.com/robwakeman/book-reading-list"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <b>robwakeman-03 (TO AMEND LINK)</b>
         </a>
@@ -29,13 +30,18 @@ const WorkPage = () => (
         <a
           href="https://github.com/robwakeman/book-reading-list"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <b>book-reading-list</b>
         </a>
         <p>Book reading list app</p>
       </li>
       <li>
-        <a href="https://github.com/robwakeman/short-jokes" target="_blank">
+        <a
+          href="https://github.com/robwakeman/short-jokes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <b>short-jokes</b>
           <p>React app that displays short jokes</p>
         </a>
@@ -44,6 +50,7 @@ const WorkPage = () => (
         <a
           href="https://github.com/robwakeman/npm-scripts-igloo"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <b>npm-scripts-igloo</b>
           <p>
@@ -53,7 +60,11 @@ const WorkPage = () => (
         </a>
       </li>
       <li>
-        <a href="https://github.com/robwakeman/rwajaxform" target="_blank">
+        <a
+          href="https://github.com/robwakeman/rwajaxform"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <b>rwajaxform</b>
           <p>
             Custom WordPress contact form plugin integrated with Bootstrap 4
