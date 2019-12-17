@@ -115,7 +115,8 @@ p {
  */
 
 .content p a,
-.content li a {
+.content li a,
+.content div a {
   white-space: nowrap;
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
   border-bottom: 4px solid $colourPrimary;
