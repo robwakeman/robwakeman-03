@@ -17,6 +17,7 @@ const WorkPage = () => {
             frontmatter {
               path
               title
+              description
             }
           }
         }
@@ -96,12 +97,14 @@ const WorkPage = () => {
 
       <h2>Earlier client work</h2>
 
-      <ul>
+      <ul className="clientWorkList">
         {data.allMarkdownRemark.edges.map(project => {
           return (
             <li key={project.node.id}>
-              <h3>{project.node.frontmatter.title}</h3>
-              <Link to={project.node.frontmatter.path}>View project</Link>
+              <Link to={project.node.frontmatter.path}>
+                <b>{project.node.frontmatter.title}</b>
+              </Link>
+              <p>{project.node.frontmatter.description}</p>
             </li>
           )
         })}
