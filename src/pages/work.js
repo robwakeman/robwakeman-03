@@ -97,7 +97,7 @@ const WorkPage = () => {
 
       <h2>Earlier client work</h2>
 
-      <ul className="clientWorkList">
+      <ul>
         {data.allMarkdownRemark.edges.map(project => {
           return (
             <li key={project.node.id}>
