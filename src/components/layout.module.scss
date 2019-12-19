@@ -13,8 +13,8 @@ body {
   line-height: 1.8;
   color: $textColour;
   padding-top: calc(
-    80px + 2rem
-  ); // (height of nav + 2rem) - to prevent content from being hidden under fixed nav
+    #{$headerHeight} + 2rem
+  ); // add header height and 2rem) to prevent content from being hidden under fixed nav
 }
 
 @media (min-width: 600px) {
@@ -65,7 +65,8 @@ a {
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - #{$headerHeight} - 2rem);
+  // subtract both header height and 2rem to prevent fixed nav from being pushed below bottom of viewport
 }
 
 // to make sticky footer in combination with .container
