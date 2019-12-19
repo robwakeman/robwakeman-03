@@ -107,52 +107,54 @@
   @media (min-width: 800px) {
     display: none;
   }
+
+  & span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $colourPrimary;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  & span:nth-child(1) {
+    top: 0px;
+  }
+
+  & span:nth-child(2),
+  & span:nth-child(3) {
+    top: 10px;
+  }
+
+  & span:nth-child(4) {
+    top: 20px;
+  }
 }
 
-.burger span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: $colourPrimary;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: 0.25s ease-in-out;
-}
+.nav-active .burger {
+  & span:nth-child(1) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
 
-.burger span:nth-child(1) {
-  top: 0px;
-}
+  & span:nth-child(2) {
+    transform: rotate(45deg);
+  }
 
-.burger span:nth-child(2),
-.burger span:nth-child(3) {
-  top: 10px;
-}
+  & span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
 
-.burger span:nth-child(4) {
-  top: 20px;
-}
-
-.nav-active .burger span:nth-child(1) {
-  top: 10px;
-  width: 0%;
-  left: 50%;
-}
-
-.nav-active .burger span:nth-child(2) {
-  transform: rotate(45deg);
-}
-
-.nav-active .burger span:nth-child(3) {
-  transform: rotate(-45deg);
-}
-
-.nav-active .burger span:nth-child(4) {
-  top: 10px;
-  width: 0%;
-  left: 50%;
+  & span:nth-child(4) {
+    top: 10px;
+    width: 0%;
+    left: 50%;
+  }
 }
 
 .github {
