@@ -22,6 +22,19 @@
   transition: transform 0.2s ease-in;
   margin-left: -10%;
   margin-right: -10%;
+
+  @media (min-width: 800px) {
+    font-size: $textMD;
+    background-color: transparent;
+    position: initial;
+    z-index: initial;
+    height: initial;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+    transform: translate3d(0, 0, 0);
+    transition: none;
+  }
 }
 
 .nav-active .nav-items {
@@ -31,6 +44,16 @@
 .nav-item {
   margin-top: 3rem;
   opacity: 0;
+
+  @media (min-width: 800px) {
+    margin-right: 2rem;
+    margin-top: 0;
+    opacity: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav-active .nav-item {
@@ -40,10 +63,35 @@
 
 .nav-link {
   position: relative;
-}
 
-.nav-link:hover {
-  color: $colourPrimary;
+  &:hover {
+    color: $colourPrimary;
+  }
+
+  @media (min-width: 800px) {
+    &::before {
+      content: "";
+      display: block;
+      height: 7px;
+      background-color: $colourPrimary;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -28px;
+      transform: scaleX(0);
+      transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: 0 50%;
+    }
+
+    // active state - selector has higher specificity than .nav-link::before above, so this rule overrides scaleX(0) in prev rule
+    &.nav-link-active::before {
+      transform: scaleX(1);
+    }
+  }
 }
 
 .burger {
@@ -55,6 +103,10 @@
   height: 23px;
   position: relative;
   transition: 0.5s ease-in-out;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
 }
 
 .burger span {
@@ -108,67 +160,15 @@
   height: 35px;
   margin-left: 0;
   margin-top: 1rem;
-}
 
-.github-link:hover .github path {
-  fill: $colourPrimary;
-}
-
-@media (min-width: 800px) {
-  .nav-items {
-    font-size: $textMD;
-    background-color: transparent;
-    position: initial;
-    z-index: initial;
-    height: initial;
-    flex-direction: row;
-    margin-left: 0;
-    margin-right: 0;
-    transform: translate3d(0, 0, 0);
-    transition: none;
-  }
-
-  .nav-item {
-    margin-right: 2rem;
-    margin-top: 0;
-    opacity: 1;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  .nav-link::before {
-    content: "";
-    display: block;
-    height: 7px;
-    background-color: $colourPrimary;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -28px;
-    transform: scaleX(0);
-    transition: transform 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-  .nav-link:hover::before {
-    transform: scaleX(1);
-    transform-origin: 0 50%;
-  }
-
-  // active state - selector has higher specificity than .nav-link::before above, so this rule overrides scaleX(0) in prev rule
-  .nav-link.nav-link-active::before {
-    transform: scaleX(1);
-  }
-
-  .burger {
-    display: none;
-  }
-
-  .github {
+  @media (min-width: 800px) {
     width: 26px;
     height: 26px;
     margin-left: 2rem;
     margin-top: 0.5rem;
   }
+}
+
+.github-link:hover .github path {
+  fill: $colourPrimary;
 }
