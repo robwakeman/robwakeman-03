@@ -157,8 +157,8 @@ p {
 .skills {
   padding: 2rem;
   background: #f1f1f1;
-}
 
-.skills ul:last-child {
-  margin-bottom: 0;
+  & ul:last-child {
+    margin-bottom: 0;
+  }
 }
