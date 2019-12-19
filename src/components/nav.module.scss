@@ -23,7 +23,7 @@
   margin-left: -10%;
   margin-right: -10%;
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     font-size: $textMD;
     background-color: transparent;
     position: initial;
@@ -45,7 +45,7 @@
   margin-top: 3rem;
   opacity: 0;
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     margin-right: 2rem;
     margin-top: 0;
     opacity: 1;
@@ -68,7 +68,7 @@
     color: $colourPrimary;
   }
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     &::before {
       content: "";
       display: block;
@@ -104,7 +104,7 @@
   position: relative;
   transition: 0.5s ease-in-out;
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     display: none;
   }
 
@@ -163,7 +163,7 @@
   margin-left: 0;
   margin-top: 1rem;
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     width: 26px;
     height: 26px;
     margin-left: 2rem;
