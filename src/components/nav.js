@@ -12,8 +12,6 @@ const Nav = () => {
     setNavOpenState(!navIsOpen)
   }
 
-  console.log("navIsOpen is", navIsOpen)
-
   return (
     <>
       <nav
