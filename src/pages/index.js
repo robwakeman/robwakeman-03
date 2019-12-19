@@ -56,6 +56,7 @@ const IndexPage = () => (
           <a
             href="https://github.com/robwakeman/book-reading-list"
             target="_blank"
+            rel="noopener noreferrer"
           >
             book-reading-list
           </a>
@@ -64,6 +65,7 @@ const IndexPage = () => (
           <a
             href="https://github.com/robwakeman/npm-scripts-igloo"
             target="_blank"
+            rel="noopener noreferrer"
           >
             npm-scripts-igloo
           </a>
