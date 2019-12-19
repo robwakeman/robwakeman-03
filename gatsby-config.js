@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        data: `@import "variables";@import "minireset";`,
+        data: `@import "variables";@import "mixins";@import "minireset";`,
         includePaths: [`${__dirname}/src/styles`],
       },
     },

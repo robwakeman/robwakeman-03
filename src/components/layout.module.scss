@@ -76,19 +76,19 @@ a {
   width: 90vw;
   padding: 3rem 0;
 
-  @media (min-width: 800px) {
+  @include respond(sm) {
     width: 70vw;
   }
 
-  @media (min-width: 1000px) {
+  @include respond(md) {
     width: 65vw;
   }
 
-  @media (min-width: 1200px) {
+  @include respond(lg) {
     width: 60vw;
   }
 
-  @media (min-width: 1400px) {
+  @include respond(xl) {
     width: 50vw;
   }
 }
