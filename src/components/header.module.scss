@@ -1,7 +1,7 @@
 .header {
   background-color: $colourSecondary;
   color: #ffffff;
-  height: 80px; // height of burger is 29px (including aggregated height of divs and vertical margins), so 35px accommodates it - need to specify it here to fix the same heigh for both small and large screens
+  height: 80px;
   position: fixed;
   top: 0; // top 0 is needed when I add padding-top to the body
   right: 0;
