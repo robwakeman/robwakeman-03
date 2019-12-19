@@ -14,7 +14,7 @@ body {
   color: $textColour;
   padding-top: calc(
     80px + 2rem
-  ); // (height of nav + 1rem) - to prevent content from being hidden under fixed nav
+  ); // (height of nav + 2rem) - to prevent content from being hidden under fixed nav
 }
 
 @media (min-width: 600px) {
