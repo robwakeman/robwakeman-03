@@ -27,7 +27,7 @@ const WorkPage = () => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Work" />
       <h1>Work</h1>
       <p>
         Latest projects on GitHub demonstrating HTML, CSS/Sass, JavaScript,
