@@ -1,3 +1,5 @@
+// partials are now included via gatsby-config.js. main.scss is no longer used.
+
 @mixin respond($breakpoint) {
   @if $breakpoint == xs {
     @media (min-width: 600px) {
