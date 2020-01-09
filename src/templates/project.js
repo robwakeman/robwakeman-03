@@ -15,6 +15,8 @@ const Project = ({ data }) => {
       <p>{project.frontmatter.description}</p>
       <p>{project.frontmatter.client}</p>
       <Img fluid={project.frontmatter.workImageLarge.childImageSharp.fluid} />
+      <Img fluid={project.frontmatter.workImageSmall.childImageSharp.fluid} />
+      <Img fluid={project.frontmatter.workImageMedium.childImageSharp.fluid} />
     </Layout>
   )
 }
@@ -30,7 +32,21 @@ export const data = graphql`
         client
         workImageLarge {
           childImageSharp {
+            fluid(maxWidth: 900) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        workImageMedium {
+          childImageSharp {
             fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        workImageSmall {
+          childImageSharp {
+            fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
