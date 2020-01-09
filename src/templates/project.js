@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 const Project = ({ data }) => {
@@ -13,6 +14,7 @@ const Project = ({ data }) => {
       <h1>{project.frontmatter.title}</h1>
       <p>{project.frontmatter.description}</p>
       <p>{project.frontmatter.client}</p>
+      <Img fluid={project.frontmatter.workImageLarge.childImageSharp.fluid} />
     </Layout>
   )
 }
@@ -26,6 +28,13 @@ export const data = graphql`
         title
         description
         client
+        workImageLarge {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
