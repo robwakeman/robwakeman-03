@@ -14,9 +14,18 @@ const Project = ({ data }) => {
       <h1>{project.frontmatter.title}</h1>
       <p>{project.frontmatter.description}</p>
       <p>{project.frontmatter.client}</p>
-      <Img fluid={project.frontmatter.workImageLarge.childImageSharp.fluid} />
-      <Img fluid={project.frontmatter.workImageSmall.childImageSharp.fluid} />
-      <Img fluid={project.frontmatter.workImageMedium.childImageSharp.fluid} />
+      <Img
+        style={{ width: `900px`, border: `1px solid gray` }}
+        fluid={project.frontmatter.workImageLarge.childImageSharp.fluid}
+      />
+      <Img
+        style={{ width: `200px`, border: `1px solid gray` }}
+        fluid={project.frontmatter.workImageSmall.childImageSharp.fluid}
+      />
+      <Img
+        style={{ width: `300px`, border: `1px solid gray` }}
+        fluid={project.frontmatter.workImageMedium.childImageSharp.fluid}
+      />
     </Layout>
   )
 }
@@ -39,14 +48,14 @@ export const data = graphql`
         }
         workImageMedium {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 300) {
               ...GatsbyImageSharpFluid
             }
           }
         }
         workImageSmall {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 200) {
               ...GatsbyImageSharpFluid
             }
           }
