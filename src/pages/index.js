@@ -13,9 +13,8 @@ const IndexPage = () => (
     <section className={`${layoutStyles.section} ${layoutStyles.intro}`}>
       <h1>I'm Rob, a front-end developer</h1>
       <p>
-        Based in London, I work with designers and clients to{" "}
-        <Link to="/work/">produce websites</Link> that work for users and meet
-        business goals.
+        Based in London, I work with designers and clients to create websites
+        that work for users and meet business goals.
       </p>
       <Link to="/contact/" className={layoutStyles.cta}>
         Get in touch
