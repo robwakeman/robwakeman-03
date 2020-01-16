@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const WorkPage = () => {
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: ASC, fields: frontmatter___sortOrder }) {
         edges {
           node {
             id
@@ -16,9 +16,10 @@ const WorkPage = () => {
               path
               title
               description
+              sortOrder
               workImageLarge {
                 childImageSharp {
-                  fluid(maxWidth: 200) {
+                  fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -108,7 +109,7 @@ const WorkPage = () => {
             </Link>
             <p>{project.node.frontmatter.description}</p>
             <Img
-              style={{ width: `200px`, border: `1px solid gray` }}
+              style={{ maxWidth: `500px`, border: `1px solid gray` }}
               fluid={
                 project.node.frontmatter.workImageLarge.childImageSharp.fluid
               }

@@ -6,6 +6,7 @@ client: "Mentzendorff & Co Ltd"
 workImageLarge: mentzendorff-large.jpg
 workImageMedium: mentzendorff-medium.jpg
 workImageSmall: mentzendorff-small.jpg
+sortOrder: 2
 ---
 
 # Mentzendorff

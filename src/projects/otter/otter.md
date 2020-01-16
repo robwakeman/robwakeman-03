@@ -6,6 +6,7 @@ client: "Central Saint Martins — University of the Arts London"
 workImageLarge: otter-large.jpg
 workImageMedium: otter-medium.jpg
 workImageSmall: otter-small.jpg
+sortOrder: 1
 ---
 
 # Otter
