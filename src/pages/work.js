@@ -1,8 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
 
 const WorkPage = () => {
@@ -16,6 +16,13 @@ const WorkPage = () => {
               path
               title
               description
+              workImageLarge {
+                childImageSharp {
+                  fluid(maxWidth: 200) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -100,6 +107,13 @@ const WorkPage = () => {
               <b>{project.node.frontmatter.title}</b>
             </Link>
             <p>{project.node.frontmatter.description}</p>
+            <Img
+              style={{ width: `200px`, border: `1px solid gray` }}
+              fluid={
+                project.node.frontmatter.workImageLarge.childImageSharp.fluid
+              }
+              alt={`${project.node.frontmatter.title} website - small screen`}
+            />
           </div>
         )
       })}
