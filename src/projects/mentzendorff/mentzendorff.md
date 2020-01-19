@@ -27,4 +27,4 @@ After giving the marketing team a little training, there were able to confidentl
 
 > My MD was very happy with everything when the site was presented to the company..., so thank you for all your hard work.
 >
-> <cite> Rebecca Herbert, Events and Marketing Manager</cite>
+> <cite>Rebecca Herbert, Events and Marketing Manager</cite>

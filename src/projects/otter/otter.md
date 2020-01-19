@@ -18,3 +18,11 @@ The website previously existed on a Drupal CMS. However, the Head of Technical &
 Otter’s Technical Administration Coordinator (and project manager for this rebuild), Sirisa Clark, had an existing technical knowledge of WordPress, so it was an obvious choice for the CMS.
 
 I worked with her closely to plan out the new information architecture and ensured that all the content and navigation could be managed with relative ease and with minimal training.
+
+> It has been a pleasure to work with Rob on developing our new website. From the start he has been very patient and helpful, firstly in helping me to tease out the specification of what we needed and refine my ideas, and also to help me learn about the technical aspects of building and maintaining a site of this nature.
+>
+> Rob has fantastic attention to detail and thoroughness in his approach, which I greatly appreciate. His technical knowledge and problem-solving abilities have been invaluable in meeting any request or challenge I have put to him, and in delivering a site that meets our needs.
+>
+> I hope to continue working with Rob in the future, and would recommend his services.
+>
+> <cite>Sirisa Clark, Technical Administration Coordinator</cite>
