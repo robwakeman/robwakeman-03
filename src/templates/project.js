@@ -15,17 +15,17 @@ const Project = ({ data }) => {
       <p>{project.frontmatter.description}</p>
       <p>{project.frontmatter.client}</p>
       <Img
-        style={{ width: `900px`, border: `1px solid gray` }}
+        style={{ maxWidth: `900px`, border: `1px solid gray` }}
         fluid={project.frontmatter.workImageLarge.childImageSharp.fluid}
         alt={`${project.frontmatter.title} website - large screen`}
       />
       <Img
-        style={{ width: `200px`, border: `1px solid gray` }}
+        style={{ maxWidth: `200px`, border: `1px solid gray` }}
         fluid={project.frontmatter.workImageSmall.childImageSharp.fluid}
         alt={`${project.frontmatter.title} website - small screen`}
       />
       <Img
-        style={{ width: `300px`, border: `1px solid gray` }}
+        style={{ maxWidth: `300px`, border: `1px solid gray` }}
         fluid={project.frontmatter.workImageMedium.childImageSharp.fluid}
         alt={`${project.frontmatter.title} website - medium screen`}
       />
