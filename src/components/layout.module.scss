@@ -162,3 +162,48 @@ p {
     margin-bottom: 0;
   }
 }
+
+figure {
+  font-size: $textSM;
+  color: #666666;
+  margin: 3rem 5rem;
+
+  & blockquote {
+    font-style: italic;
+    position: relative;
+
+    &::before,
+    &::after {
+      font-size: $textXXL;
+      position: absolute;
+      color: #b1b1b1;
+    }
+
+    &::before {
+      // content: open-quote;
+      content: "\201C";
+      top: -20px;
+      left: -30px;
+    }
+
+    &::after {
+      // content: close-quote;
+      content: "\201D";
+      bottom: -30px;
+      right: -20px;
+    }
+  }
+
+  & p {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+
+  & figcaption {
+    margin-top: 1rem;
+    & cite:before {
+      content: "\2014 \0020";
+    }
+  }
+}
