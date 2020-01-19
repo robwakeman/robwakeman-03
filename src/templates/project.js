@@ -29,6 +29,7 @@ const Project = ({ data }) => {
         fluid={project.frontmatter.workImageMedium.childImageSharp.fluid}
         alt={`${project.frontmatter.title} website - medium screen`}
       />
+      <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
   )
 }

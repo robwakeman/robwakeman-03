@@ -9,8 +9,6 @@ workImageSmall: mentzendorff-small.jpg
 sortOrder: 2
 ---
 
-# Mentzendorff
-
 Mentzendorff is one of the UK’s longest-established wine importers.
 
 The client needed to migrate their existing website content to a content management system as an intermediate step before a full rebrand planned as a subsequent phase. I was briefed to maintain a similar look but with a more contemporary feel and move from a fixed-width to a responsive website.

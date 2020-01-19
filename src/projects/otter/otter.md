@@ -9,8 +9,6 @@ workImageSmall: otter-small.jpg
 sortOrder: 1
 ---
 
-# Otter
-
 Otter is an internal website for students and staff at Central Saint Martins.
 
 It provides information and resources on technical workshops and supporting staff using text, images, videos and 360 tours.
