@@ -181,14 +181,12 @@ figure {
 
     &::before {
       content: open-quote;
-      // content: "\201C";
       top: -20px;
       left: -30px;
     }
 
     &::after {
       content: close-quote;
-      // content: "\201D";
       bottom: -30px;
       right: -20px;
     }
