@@ -28,20 +28,19 @@ const AboutPage = () => (
       communication throughout the project lifecycle. And I offer ongoing
       support and guidance after sign off.
     </p>
-    <figure>
-      <blockquote cite="Client: Central Saint Martins – UAL">
-        <p>
-          Rob has fantastic attention to detail and thoroughness in his
-          approach, which I greatly appreciate. His technical knowledge and
-          problem-solving abilities have been invaluable in meeting any request
-          or challenge I have put to him, and in delivering a site that meets
-          our needs.
-        </p>
-      </blockquote>
-      <figcaption>
+
+    <blockquote cite="Client: Central Saint Martins – UAL">
+      <p>
+        Rob has fantastic attention to detail and thoroughness in his approach,
+        which I greatly appreciate. His technical knowledge and problem-solving
+        abilities have been invaluable in meeting any request or challenge I
+        have put to him, and in delivering a site that meets our needs.
+      </p>
+      <p>
         <cite>Client: Central Saint Martins – UAL</cite>
-      </figcaption>
-    </figure>
+      </p>
+    </blockquote>
+
     <Link to="/contact/" className={layoutStyles.cta}>
       Get in touch
     </Link>

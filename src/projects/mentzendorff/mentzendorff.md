@@ -24,3 +24,7 @@ I ensured that the client could manage access permissions for their price lists 
 I maintained close communication with the client at every stage from discovery to deployment, helping with any questions and ensuring that they had a clear understanding where relevant.
 
 After giving the marketing team a little training, there were able to confidently take on the management their website independently.
+
+> My MD was very happy with everything when the site was presented to the company..., so thank you for all your hard work.
+>
+> <cite> Rebecca Herbert, Events and Marketing Manager</cite>
