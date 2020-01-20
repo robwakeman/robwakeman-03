@@ -230,7 +230,7 @@ blockquote {
   }
 
   &::after {
-    // not using content: close-quote cos difficult to align vertically with the last paragraph being in the cite section
+    // not using content: close-quote because it's difficult to align vertically with the last paragraph being in the cite section
     right: -20px;
   }
 
@@ -250,12 +250,12 @@ blockquote {
 
   // last but one paragraph
   & p:first-child::before {
-    content: "“"; // open double smart quotes (open-quote produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+    content: "“"; // open double smart quotes (open-quote) produces a single quote, probably because a double-quote has already been opened in blockquote::before)
   }
 
   // last but one paragraph
   & p:nth-last-child(2)::after {
-    content: "”"; // close double smart quotes (close-quote produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+    content: "”"; // close double smart quotes (close-quote) produces a single quote, probably because a double-quote has already been opened in blockquote::before)
   }
 
   // cite section
