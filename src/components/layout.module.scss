@@ -201,12 +201,12 @@ blockquote {
   }
 
   & p:first-child::before {
-    content: "“"; // open double smart quotes (open-quote) produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+    content: "“";
   }
 
   // last but one paragraph
   & p:nth-last-child(2)::after {
-    content: "”"; // close double smart quotes (close-quote) produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+    content: "”";
   }
 
   // cite section
