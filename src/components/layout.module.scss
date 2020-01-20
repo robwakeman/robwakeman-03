@@ -163,54 +163,11 @@ p {
   }
 }
 
-// figure {
-//   font-size: $textSM;
-//   color: #666666;
-//   margin: 3rem 5rem;
-
-//   & blockquote {
-//     font-style: italic;
-//     position: relative;
-
-//     &::before,
-//     &::after {
-//       font-size: $textXXL;
-//       position: absolute;
-//       color: #b1b1b1;
-//     }
-
-//     &::before {
-//       content: open-quote;
-//       top: -20px;
-//       left: -30px;
-//     }
-
-//     &::after {
-//       content: close-quote;
-//       bottom: -30px;
-//       right: -20px;
-//     }
-//   }
-
-//   & p {
-//     background-color: #f1f1f1;
-//     padding: 1rem;
-//     margin-bottom: 0;
-//   }
-
-//   & figcaption {
-//     margin-top: 1rem;
-//     & cite:before {
-//       content: "\2014 \0020";
-//     }
-//   }
-// }
-
 blockquote {
-  font-size: $textSM;
+  font-size: $textMD;
   font-style: italic;
-  // color: #666666;
   color: $colourSecondary;
+  color: scale-color($colourSecondary, $lightness: -20%);
   position: relative;
   margin: 3rem 5rem;
 
@@ -218,7 +175,6 @@ blockquote {
   &::after {
     font-size: calc(#{$textXXL * 6});
     position: absolute;
-    // color: #b1b1b1;
     color: scale-color($colourSecondary, $lightness: 65%);
     opacity: 0.4;
   }
@@ -235,7 +191,8 @@ blockquote {
   }
 
   & p {
-    background-color: #f1f1f1; // same as .skills so make variable?
+    background-color: scale-color($colourSecondary, $lightness: 92%);
+    // same as .skills so make variable?
     margin-bottom: 0;
     padding: 1.5rem 1.5rem 0;
   }
@@ -248,7 +205,6 @@ blockquote {
     padding-bottom: 1.5rem;
   }
 
-  // last but one paragraph
   & p:first-child::before {
     content: "“"; // open double smart quotes (open-quote) produces a single quote, probably because a double-quote has already been opened in blockquote::before)
   }
