@@ -185,10 +185,10 @@ blockquote {
     left: -60px;
   }
 
-  &::after {
-    // not using content: close-quote because it's difficult to align vertically with the last paragraph being in the cite section
-    right: -20px;
-  }
+  // &::after {
+  // not using content: close-quote because it's difficult to align vertically with the last paragraph being in the cite section
+  // right: -20px;
+  // }
 
   & p {
     background-color: scale-color($colourSecondary, $lightness: 92%);
