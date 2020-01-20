@@ -209,7 +209,8 @@ p {
 blockquote {
   font-size: $textSM;
   font-style: italic;
-  color: #666666;
+  // color: #666666;
+  color: $colourSecondary;
   position: relative;
   margin: 3rem 5rem;
 
@@ -217,8 +218,9 @@ blockquote {
   &::after {
     font-size: calc(#{$textXXL * 6});
     position: absolute;
-    color: #b1b1b1;
-    opacity: 0.2;
+    // color: #b1b1b1;
+    color: scale-color($colourSecondary, $lightness: 65%);
+    opacity: 0.4;
   }
 
   &::before {
@@ -228,18 +230,38 @@ blockquote {
   }
 
   &::after {
-    // content: close-quote;
+    // not using content: close-quote cos difficult to align vertically with the last paragraph being in the cite section
     right: -20px;
   }
 
   & p {
-    background-color: #f1f1f1;
-    padding: 1rem;
+    background-color: #f1f1f1; // same as .skills so make variable?
     margin-bottom: 0;
+    padding: 1.5rem 1.5rem 0;
   }
 
+  & p:first-child {
+    padding: 1.5rem 1.5rem 0;
+  }
+
+  & p:nth-last-child(2) {
+    padding-bottom: 1.5rem;
+  }
+
+  // last but one paragraph
+  & p:first-child::before {
+    content: "“"; // open double smart quotes (open-quote produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+  }
+
+  // last but one paragraph
+  & p:nth-last-child(2)::after {
+    content: "”"; // close double smart quotes (close-quote produces a single quote, probably because a double-quote has already been opened in blockquote::before)
+  }
+
+  // cite section
   & p:last-child {
     background-color: transparent;
+    margin-top: 1rem;
     padding: 0;
   }
 
