@@ -4,7 +4,7 @@
 /* edited by RW */
 
 html,
-body,
+// body,
 p,
 ol,
 ul,
@@ -28,6 +28,11 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+// add margin 0 back in here as the I've removed the selector from above due to it overriding layout padding styles
+body {
+  margin: 0;
 }
 
 /* h1,
