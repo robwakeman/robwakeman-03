@@ -16,7 +16,7 @@
   flex: 1;
 
   @include respond(xs) {
-    flex-basis: 1800px;
+    flex-basis: 800px;
   }
 }
 
