@@ -1,0 +1,30 @@
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.project-image {
+  // display: block;
+  flex: 1;
+  flex-basis: 600px;
+  border: 1px solid lightgrey;
+  margin-bottom: 3rem;
+}
+
+.project-image:nth-child(1) {
+  max-width: 900px;
+  margin-bottom: 3rem;
+}
+
+.project-image:nth-child(2) {
+  max-width: 200px;
+  margin-right: 3rem;
+  margin-bottom: 0;
+}
+
+.project-image:nth-child(3) {
+  max-width: 300px;
+  margin-right: 3rem;
+  margin-bottom: 0;
+}

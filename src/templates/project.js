@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
+import projectStyles from "./project.module.scss"
 
 const Project = ({ data }) => {
   const { markdownRemark: project } = data
@@ -10,25 +11,28 @@ const Project = ({ data }) => {
   return (
     <Layout>
       {/* Make this SEO title attribute dynamic */}
-      <SEO title="Project" />
+      <SEO title={`${project.frontmatter.title} project`} />
       <h1>{project.frontmatter.title}</h1>
       <p>{project.frontmatter.description}</p>
       <p>{project.frontmatter.client}</p>
-      <Img
-        style={{ maxWidth: `900px`, border: `1px solid gray` }}
-        fluid={project.frontmatter.workImageLarge.childImageSharp.fluid}
-        alt={`${project.frontmatter.title} website - large screen`}
-      />
-      <Img
-        style={{ maxWidth: `200px`, border: `1px solid gray` }}
-        fluid={project.frontmatter.workImageSmall.childImageSharp.fluid}
-        alt={`${project.frontmatter.title} website - small screen`}
-      />
-      <Img
-        style={{ maxWidth: `300px`, border: `1px solid gray` }}
-        fluid={project.frontmatter.workImageMedium.childImageSharp.fluid}
-        alt={`${project.frontmatter.title} website - medium screen`}
-      />
+      <div className={projectStyles.projectImages}>
+        <Img
+          className={projectStyles.projectImage}
+          fluid={project.frontmatter.workImageLarge.childImageSharp.fluid}
+          alt={`${project.frontmatter.title} website - large screen`}
+        />
+        <Img
+          className={projectStyles.projectImage}
+          fluid={project.frontmatter.workImageSmall.childImageSharp.fluid}
+          alt={`${project.frontmatter.title} website - small screen`}
+        />
+        <Img
+          className={projectStyles.projectImage}
+          fluid={project.frontmatter.workImageMedium.childImageSharp.fluid}
+          alt={`${project.frontmatter.title} website - medium screen`}
+        />
+      </div>
+
       <div dangerouslySetInnerHTML={{ __html: project.html }} />
     </Layout>
   )
