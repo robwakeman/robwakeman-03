@@ -2,6 +2,82 @@
 
 /* autoprefixer grid: autoplace */
 
+// From _minireset.scss - moved here due to styles unexpectedly overriding styles in layout.module.scss
+
+// minireset.css BEGIN
+
+/*! minireset.css v0.0.5 | MIT License | github.com/jgthms/minireset.css */
+/* edited by RW */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: bottom; /* Thanks, Jen Simmons */
+}
+
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
+
+// minireset.css END
+
 html {
   font-size: 62.5%;
 
