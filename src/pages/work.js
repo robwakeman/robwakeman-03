@@ -116,19 +116,28 @@ const WorkPage = () => {
         <ul>
           {data.allMarkdownRemark.edges.map(project => {
             return (
-              <li key={project.node.id}>
-                <Link to={project.node.frontmatter.path}>
-                  <h3>{project.node.frontmatter.title}</h3>
-                  <Img
-                    style={{ maxWidth: `500px`, border: `1px solid gray` }}
-                    fluid={
-                      project.node.frontmatter.workImageLarge.childImageSharp
-                        .fluid
-                    }
-                    alt={`${project.node.frontmatter.title} website - small screen`}
-                  />
-                </Link>
-                <p>{project.node.frontmatter.description}</p>
+              <li
+                className={layoutStyles.clientWork__item}
+                key={project.node.id}
+              >
+                <div className={layoutStyles.clientWork__image}>
+                  <Link to={project.node.frontmatter.path}>
+                    <Img
+                      style={{ maxWidth: `500px`, border: `1px solid gray` }}
+                      fluid={
+                        project.node.frontmatter.workImageLarge.childImageSharp
+                          .fluid
+                      }
+                      alt={`${project.node.frontmatter.title} website - small screen`}
+                    />
+                  </Link>
+                </div>
+                <div className={layoutStyles.clientWork__text}>
+                  <Link to={project.node.frontmatter.path}>
+                    <h3>{project.node.frontmatter.title}</h3>
+                  </Link>
+                  <p>{project.node.frontmatter.description}</p>
+                </div>
               </li>
             )
           })}

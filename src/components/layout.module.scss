@@ -210,7 +210,7 @@ p {
 .content p a,
 .content li a,
 .content div a,
-.content li h3 {
+.content .work h3 {
   white-space: nowrap;
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
   border-bottom: 4px solid $colourPrimary;
@@ -219,6 +219,10 @@ p {
   &:hover {
     background-color: $colourPrimary;
   }
+}
+
+.content .work h3 {
+  margin-bottom: 0.5rem;
 }
 
 .cta {
@@ -303,3 +307,46 @@ blockquote {
     content: "\2014 \0020";
   }
 }
+
+// work page
+
+.non-client-work {
+  margin-bottom: 7rem;
+  // background: pink;
+}
+
+.client-work {
+  // padding-top: 1.5rem;
+  // background: lightgoldenrodyellow;
+  &__item {
+    margin-bottom: 6rem;
+
+    @include respond(xs) {
+      display: flex;
+    }
+  }
+  &__text {
+    flex: 2.2;
+  }
+
+  &__image {
+    flex: 1;
+    margin-right: 2rem;
+  }
+}
+
+// @include respond(xs) {
+//   .client-work__item {
+//     display: flex;
+//     margin-bottom: 3rem;
+//   }
+
+//   .client-work__item > * {
+//     flex: 2.2;
+//   }
+
+//   .client-work__image {
+//     flex: 1;
+//     margin-right: 2rem;
+//   }
+// }
