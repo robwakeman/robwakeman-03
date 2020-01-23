@@ -111,15 +111,16 @@ const WorkPage = () => {
             <div key={project.node.id}>
               <Link to={project.node.frontmatter.path}>
                 <b>{project.node.frontmatter.title}</b>
+                <Img
+                  style={{ maxWidth: `500px`, border: `1px solid gray` }}
+                  fluid={
+                    project.node.frontmatter.workImageLarge.childImageSharp
+                      .fluid
+                  }
+                  alt={`${project.node.frontmatter.title} website - small screen`}
+                />
               </Link>
               <p>{project.node.frontmatter.description}</p>
-              <Img
-                style={{ maxWidth: `500px`, border: `1px solid gray` }}
-                fluid={
-                  project.node.frontmatter.workImageLarge.childImageSharp.fluid
-                }
-                alt={`${project.node.frontmatter.title} website - small screen`}
-              />
             </div>
           )
         })}
