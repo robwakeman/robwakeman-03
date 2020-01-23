@@ -187,6 +187,10 @@ h2 {
   font-size: $textLG;
 }
 
+h3 {
+  font-size: $textMD;
+}
+
 p {
   margin-bottom: 0.8em;
 }
@@ -199,9 +203,14 @@ p {
  * Links - TEMP
  */
 
+.work h3 {
+  display: inline-block;
+}
+
 .content p a,
 .content li a,
-.content div a {
+.content div a,
+.content li h3 {
   white-space: nowrap;
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
   border-bottom: 4px solid $colourPrimary;
