@@ -83,7 +83,6 @@ html {
 
   @include respond(xs) {
     font-size: 66%;
-    line-height: 1.4;
   }
 
   @include respond(sm) {
@@ -166,7 +165,7 @@ a {
 }
 
 .content ul {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 /**
@@ -313,6 +312,10 @@ blockquote {
 .non-client-work {
   margin-bottom: 7rem;
   // background: pink;
+
+  & li {
+    margin-bottom: 3rem;
+  }
 }
 
 .client-work {
@@ -323,6 +326,7 @@ blockquote {
 
     @include respond(xs) {
       display: flex;
+      margin-bottom: 4rem;
     }
   }
   &__text {
