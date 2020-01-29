@@ -20,8 +20,8 @@ const IndexPage = () => (
       </Link>
       <p>I care strongly about user experience.</p>
       <p>
-        Clients include: Tate and Central Saint Martins (University of the Arts
-        London)
+        Clients I've helped include: Tate and Central Saint Martins (University
+        of the Arts London)
       </p>
     </section>
 
