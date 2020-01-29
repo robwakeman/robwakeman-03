@@ -6,6 +6,8 @@
   @include respond(xs) {
     flex-direction: row;
     flex-wrap: wrap;
+    // Medium images are different heights but same width, so different aspect ratios. Without align-items: flex-start, the medium image is stretched to be the same height as the small image (when the lines are wrapped into 2 lines), thus cropping the image sides a little - only set this >600
+    align-items: flex-start;
   }
 }
 
@@ -37,9 +39,4 @@
 .project-image:nth-child(3) {
   max-width: 300px;
   margin-bottom: 0;
-
-  @include respond(xs) {
-    // Medium images are different heights but same width, so different aspect ratios. Without align-self: flex-start, the medium image is stretched to be the same height as the small image (when the lines are wrapped into 2 lines), thus cropping the image sides a little
-    align-self: flex-start;
-  }
 }
