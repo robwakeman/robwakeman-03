@@ -1,5 +1,6 @@
 // this autoprefixer config was being declared in src/styles/main.scss, but has now been moved to layout.module.scss because the Sass partials are now included via gatsby-config.js. main.scss is no longer used.
 
+// grid not used as yet - remove this if not used by end of project
 /* autoprefixer grid: autoplace */
 
 // From _minireset.scss - moved here due to styles unexpectedly overriding styles in layout.module.scss
