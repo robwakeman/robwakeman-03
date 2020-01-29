@@ -21,7 +21,24 @@ const Nav = () => {
             : `${navStyles.nav} `
         }
       >
-        <ul className={navStyles.navItems}>
+        <button
+          id="menubutton"
+          aria-haspopup="true"
+          aria-controls="mainMenu"
+          className={navStyles.burger}
+          onClick={() => toggleNav()}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul
+          id="mainMenu"
+          role="menu"
+          aria-labelledby="menubutton"
+          className={navStyles.navItems}
+        >
           <li className={navStyles.navItem}>
             <Link
               activeClassName={navStyles.navLinkActive}
@@ -69,12 +86,6 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <div className={navStyles.burger} onClick={() => toggleNav()}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
     </>
   )
