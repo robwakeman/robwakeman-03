@@ -20,10 +20,11 @@
   }
 }
 
+// large image
 .project-image:nth-child(1) {
   max-width: 900px;
 }
-
+// small image
 .project-image:nth-child(2) {
   max-width: 200px;
 
@@ -32,8 +33,13 @@
     margin-bottom: 0;
   }
 }
-
+// medium image
 .project-image:nth-child(3) {
   max-width: 300px;
   margin-bottom: 0;
+
+  @include respond(xs) {
+    // Medium images are different heights but same width, so different aspect ratios. Without align-self: flex-start, the medium image is stretched to be the same height as the small image (when the lines are wrapped into 2 lines), thus cropping the image sides a little
+    align-self: flex-start;
+  }
 }
