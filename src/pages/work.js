@@ -52,7 +52,7 @@ const WorkPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>robwakeman-03 (TO AMEND LINK)</h3>
+              <h3>robwakeman-03 (this site) (TO AMEND LINK)</h3>
             </a>
             <p>Rob Wakeman personal site built in Gatsby</p>
           </li>

@@ -18,7 +18,7 @@ const IndexPage = () => (
       <Link to="/contact/" className={layoutStyles.cta}>
         Get in touch
       </Link>
-      <p>I care strongly about user experience.</p>
+      <p>I really do care about user experience.</p>
       <p>
         Clients I've helped include: Tate and Central Saint Martins (University
         of the Arts London)
@@ -50,6 +50,15 @@ const IndexPage = () => (
     <section className={`${layoutStyles.section} ${layoutStyles.skillsDemo}`}>
       <p>HTML, CSS, JavaScript skills demonstrated by these GitHub projects:</p>
       <ul>
+        <li>
+          <a
+            href="https://github.com/robwakeman/book-reading-list"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            robwakeman-03 (this site) (TO AMEND LINK)
+          </a>
+        </li>
         <li>
           <a
             href="https://github.com/robwakeman/book-reading-list"
