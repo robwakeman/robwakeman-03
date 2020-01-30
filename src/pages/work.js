@@ -46,11 +46,11 @@ const WorkPage = () => {
         <ul>
           <li>
             <a
-              href="https://github.com/robwakeman/book-reading-list"
+              href="https://github.com/robwakeman/robwakeman-03"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>robwakeman-03 (this site) (TO AMEND LINK)</h3>
+              <h3>robwakeman-03 (this site)</h3>
             </a>
             <p>Rob Wakeman personal site built in Gatsby</p>
           </li>

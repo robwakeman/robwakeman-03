@@ -52,11 +52,11 @@ const IndexPage = () => (
       <ul>
         <li>
           <a
-            href="https://github.com/robwakeman/book-reading-list"
+            href="https://github.com/robwakeman/robwakeman-03"
             target="_blank"
             rel="noopener noreferrer"
           >
-            robwakeman-03 (this site) (TO AMEND LINK)
+            robwakeman-03 (this site)
           </a>
         </li>
         <li>
