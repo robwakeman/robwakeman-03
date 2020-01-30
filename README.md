@@ -2,8 +2,7 @@
 
 Rebuild of personal site in Gatsby (work in progress).
 
-Existing site in WordPress/Foundation  
-https://www.robwakeman.com/
+[Existing site](https://www.robwakeman.com/) in WordPress/Foundation
 
 ## TODO
 
