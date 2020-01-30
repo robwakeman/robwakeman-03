@@ -13,6 +13,7 @@ Deploy (possibly Netlify)
 ## Reasons for rebuild
 
 - Needs a refresh
+- Opportunity to use a static site generator
 - Opportunity to learn Gatsby
 - More performant
 - More secure
