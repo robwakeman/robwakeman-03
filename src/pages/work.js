@@ -32,8 +32,6 @@ const WorkPage = () => {
     }
   `)
 
-  // console.log(data)
-
   return (
     <Layout>
       <SEO title="Work" />
