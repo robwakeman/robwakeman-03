@@ -2,10 +2,14 @@
 
 Rebuild of personal site in Gatsby (work in progress).
 
-To be completed and deployed.
-
 Existing site in WordPress/Foundation  
 https://www.robwakeman.com/
+
+## TODO
+
+Complete the build
+
+Deploy (possibly Netlify)
 
 ## Reasons for rebuild
 
