@@ -2,8 +2,7 @@
 
 Rebuild of personal site in Gatsby (work in progress).
 
-[Demo](http://dev.robwakeman.com/robwakeman-03/)  
-Issues to resolve - see below
+[Demo](http://dev.robwakeman.com/robwakeman-03/)
 
 [Existing site](https://www.robwakeman.com/) (built with WordPress/Foundation)
 
