@@ -9,19 +9,6 @@ Issues to resolve - see below
 
 ## TODO
 
-- Fix issues
-
-  - Fix images - gatsby-image is currently only rendering the blur-up effect (whether I use prefixPaths in build or not)
-
-  - Fix menu - it works on localhost, not on demo site (whether I use prefixPaths in build or not)
-
-Attempted solutions:  
-gatbsy build
-gatsby gatsby build --prefix-paths
-gatsby clean
-
---
-
 Complete the build
 
 Deploy (possibly Netlify)
