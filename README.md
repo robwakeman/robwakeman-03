@@ -11,6 +11,8 @@ Home page works, but internal paths need adjusting to work in subdomain.
 
 Complete the build
 
+Fix internal paths to allow demo site to work on subdomain
+
 Deploy (possibly Netlify)
 
 ## Reasons for rebuild
