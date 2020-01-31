@@ -3,7 +3,7 @@
 Rebuild of personal site in Gatsby (work in progress).
 
 [Demo](http://dev.robwakeman.com/robwakeman-03/)  
-Home page works, but internal paths need adjusting to work in subdomain.
+Issues to resolve - see below
 
 [Existing site](https://www.robwakeman.com/) (built with WordPress/Foundation)
 
