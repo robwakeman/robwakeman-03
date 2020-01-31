@@ -2,9 +2,10 @@
 
 Rebuild of personal site in Gatsby (work in progress).
 
-[Demo](http://dev.robwakeman.com/robwakeman-03/)
+[Demo](http://dev.robwakeman.com/robwakeman-03/)  
+Home page works, but internal paths need adjusting to work in subdomain.
 
-[Existing site](https://www.robwakeman.com/) in WordPress/Foundation
+[Existing site](https://www.robwakeman.com/) (built with WordPress/Foundation)
 
 ## TODO
 
