@@ -1,16 +1,18 @@
 # robwakeman-03
 
-Rebuild of personal site in Gatsby (work in progress).
+Rebuild of personal site in Gatsby  
+(work in progress).
 
 [Demo](http://dev.robwakeman.com/robwakeman-03/)
 
-[Existing site](https://www.robwakeman.com/) (built with WordPress/Foundation)
+[Existing site](https://www.robwakeman.com/)  
+(WordPress/Foundation)
 
 ## TODO
 
-Complete the build
-
-Deploy (possibly Netlify)
+- Add more content
+- Add contact form
+- Deploy (possibly Netlify)
 
 ## Reasons for rebuild
 
