@@ -23,3 +23,17 @@ Rebuild of personal site in Gatsby
 - More secure
 - Easier to maintain
 - Opportunity to rethink content
+
+## Notes
+
+### Project pages
+
+Project content from Markdown files.
+
+Project pages dynamically created with `createPages`
+
+Project paths are set in frontmatter e.g.
+
+`path: "/projects/otter"`
+
+This is instead of creating the page slugs programatically.
