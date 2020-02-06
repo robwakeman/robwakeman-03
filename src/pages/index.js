@@ -11,13 +11,16 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className={`${layoutStyles.section} ${layoutStyles.intro}`}>
       <h1>I'm Rob, a front-end developer</h1>
-      <p>
-        Based in London, I work with designers and clients to create websites
-        that work for users and meet business goals.
-      </p>
-      <Link to="/contact/" className={layoutStyles.cta}>
-        Get in touch
-      </Link>
+      <div className={`${layoutStyles.intro__lead}`}>
+        <p>
+          Based in London, I work with designers and clients to create websites
+          that work for users and meet business goals.
+        </p>
+        <Link to="/contact/" className={layoutStyles.cta}>
+          Get in touch
+        </Link>
+      </div>
+
       <p>
         User experience is uppermost in my mind at every stage of the process
         when developing a project.

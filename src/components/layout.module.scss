@@ -163,6 +163,7 @@ a {
 
 .section {
   margin-bottom: 6rem;
+  border-radius: $borderRadius;
 }
 
 .content ul {
@@ -214,7 +215,7 @@ p {
 
 .content p a,
 .content li a,
-.content div a,
+.content div a:not(.cta),
 .content .work h3 {
   white-space: nowrap;
   box-shadow: inset 0 -2px 0 0 $colourPrimary;
@@ -235,8 +236,10 @@ p {
   margin: 0.8rem 0 2.25rem;
   padding: 1rem 1.75rem;
   border: 1px solid $colourSecondary;
-  border-radius: 20px;
+  border-radius: $borderRadius;
   cursor: pointer;
+  font-size: $textSM;
+  font-weight: bold;
   background-color: $colourPrimary;
   transition: background 0.2s ease-out;
   &:hover {
@@ -247,6 +250,27 @@ p {
 /**
  * Other - TEMP
  */
+
+@include respond(xs) {
+  .intro__lead {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .intro__lead p {
+    flex: 3;
+    margin-right: 5rem;
+  }
+
+  .intro__lead .cta {
+    flex: 1;
+    flex-basis: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .skills {
   padding: 2rem;
