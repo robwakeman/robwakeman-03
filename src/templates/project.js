@@ -14,7 +14,7 @@ const Project = ({ data }) => {
       <SEO title={`${project.frontmatter.title} project`} />
       <h1>{project.frontmatter.title}</h1>
       <p>{project.frontmatter.description}</p>
-      <p>{project.frontmatter.client}</p>
+      <p>Client: {project.frontmatter.client}</p>
       <div className={projectStyles.projectImages}>
         <Img
           className={projectStyles.projectImage}
