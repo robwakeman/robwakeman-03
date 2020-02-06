@@ -237,9 +237,10 @@ p {
   border: 1px solid $colourSecondary;
   border-radius: 20px;
   cursor: pointer;
+  background-color: $colourPrimary;
   transition: background 0.2s ease-out;
   &:hover {
-    background-color: $colourPrimary;
+    background-color: scale-color($colourPrimary, $lightness: 70%);
   }
 }
 
