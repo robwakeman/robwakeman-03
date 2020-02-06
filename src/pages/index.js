@@ -18,7 +18,10 @@ const IndexPage = () => (
       <Link to="/contact/" className={layoutStyles.cta}>
         Get in touch
       </Link>
-      <p>I really do care about user experience.</p>
+      <p>
+        User experience is uppermost in my mind at every stage of the process
+        when developing a project.
+      </p>
       <p>
         Clients I've helped include: Tate and Central Saint Martins (University
         of the Arts London)
