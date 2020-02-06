@@ -12,6 +12,7 @@ Rebuild of personal site in Gatsby
 
 - Add more content
 - Add contact form
+- Sort CSS structure in layout.module.scss
 - Deploy (possibly Netlify)
 
 ## Reasons for rebuild
