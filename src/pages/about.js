@@ -48,16 +48,13 @@ const AboutPage = () => (
       className={`${layoutStyles.section} ${layoutStyles.otherRelatedWork}`}
     >
       <h2>Other Related Work</h2>
-
       <h3>Analytics/GTM/Content for Frances King</h3>
-
       <p>
         Various web-related work for Frances King, an English language school.
         This included Google Analytics goals, Google Tag Manager implementation,
         content editing (inc. HTML), website tech and functionality report,
         competition research.
       </p>
-
       <h3>Teaching at Central Saint Martins – University of the Arts London</h3>
       <p>Teaching short courses on web design and development</p>
       <h3>User research and functional specification for Tate</h3>
