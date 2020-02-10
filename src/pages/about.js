@@ -44,6 +44,40 @@ const AboutPage = () => (
     <Link to="/contact/" className={layoutStyles.cta}>
       Get in touch
     </Link>
+    <section
+      className={`${layoutStyles.section} ${layoutStyles.otherRelatedWork}`}
+    >
+      <h2>Other Related Work</h2>
+
+      <h3>Analytics/GTM/Content for Frances King</h3>
+
+      <p>
+        Various web-related work for Frances King, an English language school.
+        This included Google Analytics goals, Google Tag Manager implementation,
+        content editing (inc. HTML), website tech and functionality report,
+        competition research.
+      </p>
+
+      <h3>Teaching at Central Saint Martins – University of the Arts London</h3>
+      <p>Teaching short courses on web design and development</p>
+      <h3>User research and functional specification for Tate</h3>
+      <p>
+        Produced and presented user research report and functional specification
+        to key stakeholders for turbinegeneration, an international Tate project
+        connecting schools, artists and galleries (freelance contract).
+        Partnered with Unilever.
+      </p>
+      <h3>Co-founder and Technical Director of BoreMe.com</h3>
+      <p>
+        At its peak, BoreMe was a major UK entertainment/meme website,
+        partnering with Channel 4 <i>Ideas Factory</i> on various projects. The
+        business model was principally video advertising.
+      </p>
+      <p>
+        My responsibilities ranged from web development and project management
+        through to content and community management.
+      </p>
+    </section>
   </Layout>
 )
 
