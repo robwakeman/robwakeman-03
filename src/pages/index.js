@@ -32,7 +32,7 @@ const IndexPage = () => (
     </section>
 
     <section className={`${layoutStyles.section} ${layoutStyles.skills}`}>
-      <h2>Commercial experience:</h2>
+      <h2>Commercial experience with:</h2>
       <ul>
         <li>HTML</li>
         <li>CSS/Sass</li>
@@ -44,7 +44,7 @@ const IndexPage = () => (
         <li>Git</li>
       </ul>
 
-      <h2>Other technologies used:</h2>
+      <h2>Personal experience with:</h2>
       <ul>
         <li>React</li>
         <li>Gatsby</li>
@@ -53,7 +53,9 @@ const IndexPage = () => (
       </ul>
     </section>
 
-    <section className={`${layoutStyles.section} ${layoutStyles.skillsDemo}`}>
+    <section
+      className={`${layoutStyles.section} ${layoutStyles.nonClientWork}`}
+    >
       <p>HTML, CSS, JavaScript skills demonstrated by these GitHub projects:</p>
       <ul>
         <li>
