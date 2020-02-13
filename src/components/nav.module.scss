@@ -215,6 +215,12 @@
   }
 }
 
-.github-link:hover .github path {
-  fill: $colourPrimary;
+.github-link {
+  & .github path {
+    fill: #ffffff;
+  }
+
+  &:hover .github path {
+    fill: $colourPrimary;
+  }
 }
