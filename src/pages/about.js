@@ -50,10 +50,10 @@ const AboutPage = () => (
       <h2>Other Related Work</h2>
       <h3>Analytics/GTM/Content for Frances King</h3>
       <p>
-        Various web-related work for Frances King, an English language school.
+        Various web-related work for Frances King (English language school).
         This included Google Analytics goals, Google Tag Manager implementation,
-        content editing (inc. HTML), website tech and functionality report,
-        competition research.
+        content edits, report on website technology and functionality,
+        competition research and report.
       </p>
       <h3>Teaching at Central Saint Martins – University of the Arts London</h3>
       <p>Teaching short courses on web design and development</p>

@@ -26,7 +26,7 @@ const IndexPage = () => (
         when developing a project.
       </p>
       <p>
-        Clients I've helped include: Tate and Central Saint Martins (University
+        Clients I've helped include Tate and Central Saint Martins (University
         of the Arts London)
       </p>
     </section>
