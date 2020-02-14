@@ -222,6 +222,7 @@ p {
   border-bottom: 4px solid $colourPrimary;
   transition: background 0.2s ease-out;
 
+  &:focus,
   &:hover {
     background-color: $colourPrimary;
   }
