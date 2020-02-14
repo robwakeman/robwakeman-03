@@ -234,6 +234,8 @@ p {
 
 .cta {
   display: inline-block;
+  width: 100%;
+  text-align: center;
   margin: 0.8rem 0 2.25rem;
   padding: 1rem 1.75rem;
   border: 1px solid $colourSecondary;
@@ -245,6 +247,11 @@ p {
   transition: background 0.2s ease-out;
   &:hover {
     background-color: scale-color($colourPrimary, $lightness: 70%);
+  }
+
+  @include respond(sm) {
+    width: auto;
+    text-align: inherit;
   }
 }
 
