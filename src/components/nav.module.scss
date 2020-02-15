@@ -68,6 +68,11 @@
     color: $colourPrimary;
   }
 
+  &.nav-link-active {
+    color: $colourPrimary;
+    cursor: default;
+  }
+
   @include respond(sm) {
     &::before {
       content: "";
