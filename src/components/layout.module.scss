@@ -258,27 +258,6 @@ p {
  * Other - TEMP
  */
 
-@include respond(xs) {
-  .intro__lead {
-    display: flex;
-    align-items: center;
-    padding: 2rem 0;
-  }
-
-  .intro__lead p {
-    flex: 3;
-    margin-right: 5rem;
-  }
-
-  .intro__lead .cta {
-    flex: 1;
-    flex-basis: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 blockquote {
   font-size: $textMD;
   font-style: italic;

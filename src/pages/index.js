@@ -10,9 +10,9 @@ import indexStyles from "./index.module.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className={`${layoutStyles.section} ${layoutStyles.intro}`}>
+    <section className={`${layoutStyles.section} ${indexStyles.intro}`}>
       <h1>I'm Rob, a front-end developer</h1>
-      <div className={`${layoutStyles.intro__lead}`}>
+      <div className={`${indexStyles.intro__lead}`}>
         <p>
           Based in London, I work with designers and clients to create websites
           that work for users and meet business goals.
