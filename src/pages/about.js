@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import layoutStyles from "../components/layout.module.scss"
+import aboutStyles from "./about.module.scss"
 
 const AboutPage = () => (
   <Layout>
@@ -45,7 +46,7 @@ const AboutPage = () => (
       Get in touch
     </Link>
     <section
-      className={`${layoutStyles.section} ${layoutStyles.otherRelatedWork}`}
+      className={`${layoutStyles.section} ${aboutStyles.otherRelatedWork}`}
     >
       <h2>Other Related Work</h2>
 
