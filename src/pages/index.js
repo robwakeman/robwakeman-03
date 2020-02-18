@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import layoutStyles from "../components/layout.module.scss"
+import indexStyles from "./index.module.scss"
 
 const IndexPage = () => (
   <Layout>
@@ -31,7 +32,7 @@ const IndexPage = () => (
       </p>
     </section>
 
-    <section className={`${layoutStyles.section} ${layoutStyles.skills}`}>
+    <section className={`${layoutStyles.section} ${indexStyles.skills}`}>
       <h2>Commercial experience with:</h2>
       <ul>
         <li>HTML</li>

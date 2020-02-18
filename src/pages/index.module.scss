@@ -1,0 +1,14 @@
+// index page
+
+.skills {
+  padding: 2rem;
+  background-color: scale-color($colourSecondary, $lightness: 92%);
+
+  & ul {
+    margin-top: 0;
+  }
+
+  & ul:last-child {
+    margin-bottom: 0;
+  }
+}
