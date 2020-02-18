@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import SEO from "../components/seo"
 import layoutStyles from "../components/layout.module.scss"
+import workStyles from "./work.module.scss"
 
 const WorkPage = () => {
   const data = useStaticQuery(graphql`
@@ -37,7 +38,7 @@ const WorkPage = () => {
       <SEO title="Work" />
       <h1>Work</h1>
       <section
-        className={`${layoutStyles.section} ${layoutStyles.work} ${layoutStyles.nonClientWork}`}
+        className={`${layoutStyles.section} ${layoutStyles.work} ${workStyles.nonClientWork}`}
       >
         <p>
           Latest projects on GitHub demonstrating HTML, CSS/Sass, JavaScript,
@@ -109,16 +110,13 @@ const WorkPage = () => {
 
       <h2>Earlier client work</h2>
       <section
-        className={`${layoutStyles.section} ${layoutStyles.work} ${layoutStyles.clientWork}`}
+        className={`${layoutStyles.section} ${layoutStyles.work} ${workStyles.clientWork}`}
       >
         <ul>
           {data.allMarkdownRemark.edges.map(project => {
             return (
-              <li
-                className={layoutStyles.clientWork__item}
-                key={project.node.id}
-              >
-                <div className={layoutStyles.clientWork__image}>
+              <li className={workStyles.clientWork__item} key={project.node.id}>
+                <div className={workStyles.clientWork__image}>
                   <Link to={project.node.frontmatter.path}>
                     <Img
                       fluid={
@@ -129,7 +127,7 @@ const WorkPage = () => {
                     />
                   </Link>
                 </div>
-                <div className={layoutStyles.clientWork__text}>
+                <div className={workStyles.clientWork__text}>
                   <Link to={project.node.frontmatter.path}>
                     <h3>{project.node.frontmatter.title}</h3>
                   </Link>

@@ -348,39 +348,3 @@ blockquote {
     content: "\2014 \0020";
   }
 }
-
-// work page
-
-.non-client-work {
-  margin-bottom: 7rem;
-
-  & li {
-    margin-bottom: 3rem;
-  }
-}
-
-.client-work {
-  &__item {
-    padding: 2rem;
-    background-color: scale-color($colourSecondary, $lightness: 92%);
-    margin-bottom: 6rem;
-
-    @include respond(xs) {
-      display: flex;
-      margin-bottom: 4rem;
-    }
-  }
-  &__text {
-    flex: 2.2;
-  }
-
-  &__image {
-    flex: 1;
-    margin-right: 2rem;
-  }
-
-  &__image img {
-    max-width: 500px;
-    border: 1px solid lightgrey;
-  }
-}
