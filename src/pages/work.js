@@ -121,7 +121,7 @@ const WorkPage = () => {
                 <div className={layoutStyles.clientWork__image}>
                   <Link to={project.node.frontmatter.path}>
                     <Img
-                      style={{ maxWidth: `500px`, border: `1px solid gray` }}
+                      style={{ maxWidth: `500px` }}
                       fluid={
                         project.node.frontmatter.workImageLarge.childImageSharp
                           .fluid

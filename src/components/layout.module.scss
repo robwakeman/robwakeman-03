@@ -361,6 +361,8 @@ blockquote {
 
 .client-work {
   &__item {
+    padding: 2rem;
+    background-color: scale-color($colourSecondary, $lightness: 92%);
     margin-bottom: 6rem;
 
     @include respond(xs) {
@@ -375,6 +377,10 @@ blockquote {
   &__image {
     flex: 1;
     margin-right: 2rem;
+  }
+
+  &__image img {
+    border: 1px solid lightgrey;
   }
 }
 
