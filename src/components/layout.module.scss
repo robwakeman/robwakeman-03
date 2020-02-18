@@ -249,7 +249,7 @@ p {
     background-color: scale-color($colourPrimary, $lightness: 70%);
   }
 
-  @include respond(sm) {
+  @include respond(xs) {
     width: auto;
   }
 }
