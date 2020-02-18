@@ -258,6 +258,7 @@ p {
  * Other - TEMP
  */
 
+// keep in layout.module.scss, because used in both .js and .md files
 blockquote {
   font-size: $textMD;
   font-style: italic;
