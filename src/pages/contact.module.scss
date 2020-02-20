@@ -1,0 +1,79 @@
+// form reset styles taken from https://zellwk.com/blog/css-reset/
+
+input,
+textarea,
+select,
+button {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+input,
+textarea,
+button {
+  border: 1px solid $colourSecondary;
+}
+
+button {
+  border-radius: $borderRadius;
+  padding: 0.75em 1em;
+}
+
+// custom styles
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0.75rem 2rem;
+  border: 1px solid $colourSecondary;
+  background-color: scale-color($colourSecondary, $lightness: 92%);
+
+  // for honeypot field
+  & .hidden {
+    display: none;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+
+  & * {
+    display: block;
+
+    @include respond(sm) {
+      flex: 1;
+    }
+  }
+
+  & label {
+    margin-bottom: 0.25rem;
+  }
+
+  & .form-control {
+    @include respond(sm) {
+      flex: 2 0 100px;
+      margin-left: 1rem;
+    }
+  }
+
+  @include respond(sm) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+button {
+  background: $colourPrimary;
+  font-size: $textLG;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-control {
+  padding: 0.5rem;
+}
