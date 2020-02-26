@@ -7,7 +7,6 @@ const ContactPage = () => (
   <Layout>
     <SEO title="Contact" />
     <h1>Contact</h1>
-    <p>Contact form is work in progress...</p>
     <form
       className={contactStyles.contactForm}
       name="contact"
@@ -40,6 +39,7 @@ const ContactPage = () => (
           type="email"
           name="email"
           placeholder="Your email"
+          required
         />
       </div>
 
