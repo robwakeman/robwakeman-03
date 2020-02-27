@@ -1,19 +1,18 @@
 # robwakeman-03
 
-Rebuild of personal site in Gatsby  
-(work in progress).
+Rebuild of [personal site](https://confident-tesla-41316e.netlify.com/) in Gatsby
 
-[Demo](http://dev.robwakeman.com/robwakeman-03/)
+Hosted at Netlify
 
-[Existing site](https://www.robwakeman.com/)  
-(WordPress/Foundation)
+My domain `robwakeman.com` currently still points to: [previous WordPress site](https://www.robwakeman.com/)
+
+DNS to be changed
 
 ## TODO
 
+- Change DNS for custom domain
 - Add more content
-- Add contact form
-- Sort CSS structure in layout.module.scss
-- Deploy (possibly Netlify)
+- Add more notes
 
 ## Reasons for rebuild
 
