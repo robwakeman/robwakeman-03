@@ -20,10 +20,16 @@ button {
 
 // custom styles
 
+// this selector could have been omitted, but retained here to help explain markup structure
+// .contact-form-container is 100% width by default and has no background
+// the only reason I'm explicity setting background: transparent is to remove the 'Do not use empty rulesets' warning in this file
+.contact-form-container {
+  background: transparent;
+}
+
 .contact-form {
-  width: 100%;
   max-width: 550px;
-  margin: 2rem auto;
+  margin: 2rem 0 2rem;
   padding: 0.75rem 2rem;
   border: 1px solid $colourSecondary;
   background-color: scale-color($colourSecondary, $lightness: 92%);
