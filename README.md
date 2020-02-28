@@ -4,7 +4,7 @@ Rebuild of [personal site](https://confident-tesla-41316e.netlify.com/) in Gatsb
 
 Hosted at Netlify
 
-My domain `robwakeman.com` currently still points to: [previous WordPress site](https://www.robwakeman.com/)
+My domain robwakeman.com currently still points to: [previous WordPress site](https://www.robwakeman.com/)
 
 DNS to be changed
 
