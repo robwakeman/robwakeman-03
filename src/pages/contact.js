@@ -13,7 +13,7 @@ const ContactPage = () => (
         className={contactStyles.contactForm}
         name="contact"
         method="POST"
-        data-netlify-recaptcha="true"
+        // data-netlify-recaptcha="true"
         data-netlify="true"
       >
         <div className={contactStyles.hidden}>
