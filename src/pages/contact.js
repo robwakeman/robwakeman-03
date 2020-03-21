@@ -16,11 +16,11 @@ const ContactPage = () => (
         // data-netlify-recaptcha="true"
         data-netlify="true"
       >
-        <div className={contactStyles.hidden}>
+        {/* <div className={contactStyles.hidden}>
           <label>
             Please ignore this field if you're human: <input name="bot-field" />
           </label>
-        </div>
+        </div> */}
 
         <div className={contactStyles.formGroup}>
           <label htmlFor="name">Your Name</label>
