@@ -16,6 +16,9 @@ const ContactPage = () => (
         // data-netlify-recaptcha="true"
         data-netlify="true"
       >
+        {/* adding hidden field for form-name https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/#form-handling-with-static-site-generators */}
+        <input type="hidden" name="form-name" value="contact" />
+
         {/* <div className={contactStyles.hidden}>
           <label>
             Please ignore this field if you're human: <input name="bot-field" />
