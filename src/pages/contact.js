@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import contactStyles from "./contact.module.scss"
 import SEO from "../components/seo"
+import ReCAPTCHA from "react-google-recaptcha"
 
 const ContactPage = () => (
   <Layout>
@@ -58,6 +59,10 @@ const ContactPage = () => (
         </div>
 
         {/* <div data-netlify-recaptcha="true"></div> */}
+
+        <div>
+          <ReCAPTCHA sitekey="6LcgEuMUAAAAAExbYr_xO0-P3x3opEWoz2y9Plkr" />
+        </div>
 
         <div className={contactStyles.formGroup}>
           <button type="submit">Send</button>
