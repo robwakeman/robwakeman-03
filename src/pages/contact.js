@@ -61,8 +61,8 @@ const ContactPage = () => (
         {/* <div data-netlify-recaptcha="true"></div> */}
 
         <div>
-          {/* <ReCAPTCHA sitekey="6LcgEuMUAAAAAExbYr_xO0-P3x3opEWoz2y9Plkr" /> */}
-          <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
+          <ReCAPTCHA sitekey="6LcgEuMUAAAAAExbYr_xO0-P3x3opEWoz2y9Plkr" />
+          {/* <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} /> */}
         </div>
 
         <div className={contactStyles.formGroup}>
