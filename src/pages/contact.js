@@ -57,7 +57,7 @@ const ContactPage = () => (
           ></textarea>
         </div>
 
-        <div data-netlify-recaptcha="true"></div>
+        {/* <div data-netlify-recaptcha="true"></div> */}
 
         <div className={contactStyles.formGroup}>
           <button type="submit">Send</button>
