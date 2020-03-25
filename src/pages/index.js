@@ -11,11 +11,15 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className={`${layoutStyles.section} ${indexStyles.intro}`}>
-      <h1>I'm Rob, a front-end developer</h1>
+      <h1>
+        Rob Wakeman{" "}
+        <span className={`${indexStyles.jobTitle}`}>Front-end developer</span>
+      </h1>
       <div className={`${indexStyles.intro__lead}`}>
         <p>
-          Based in London, I work with designers and clients to create websites
-          that work for users and meet business goals.
+          Based in London, I'm a front-end developer working with designers and
+          clients to create websites that both work for users and meet business
+          goals.
         </p>
         <Link to="/contact/" className={layoutStyles.cta}>
           Get in touch
